@@ -29,13 +29,13 @@ def load_ontology(db_system,onto_path,ontologia):
     print(nx.info(data, n=None))
     nodes=len(data.nodes())
     print('')
-
+    return(data,nodes)
 
 def create_ontology(ontologia,onto_path):
-    print(onto_path+onto_path)
+    #print(onto_path)
     onto = get_ontology(str(onto_path+ontologia)).load()
-    print(onto)
-    print('******************************')
+
+    #print('******************************')
 
     G = nx.Graph()
 
@@ -45,6 +45,8 @@ def create_ontology(ontologia,onto_path):
     # Apresentação das classes
     classes = list(onto.classes())
 
+    #print(classes)
+
     x = []
     s=0
     u=0
@@ -53,7 +55,7 @@ def create_ontology(ontologia,onto_path):
         for l in i.is_a:
             u=u+1
             b=str(l).split('.')[-1]
-            #print(u,s,i.name,'---------',b)
+            print(u,s,i.name,'---------',b)
             G.add_edge(b,i.name)
 
     #print([e for e in G.edges])

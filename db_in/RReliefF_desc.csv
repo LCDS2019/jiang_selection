@@ -137,7 +137,7 @@ Zero Point Energy|Zero Point Energy
 Oscillator Force (HOMO-LUMO transition)|Oscillator force of the HOMO – LUMO transition (HOMO = highest occupied molecular orbital; LUMO = lowest unoccupied molecular orbital).
 HOMO-LUMO Energy Difference (Hartree)|Difference between HOMO and LUMO orbitals energies (HOMO = highest occupied molecular orbital; LUMO = lowest unoccupied molecular orbital).
 Dipole (gas phase)|Molecular dipole in gas phase.
-Highest_Occupied_Molecular_Orbital_Energy|HOMO (highest occupied molecular orbital) energy.
+Highest Occupied Molecular Orbital Energy|HOMO (highest occupied molecular orbital) energy.
 E solv. Water  (Hartree)|Difference between the total energy of the molecule in gas and water phase.
 Gibbs Free Energy|Gibbs Free Energy
 Dipole (water)|Molecular dipole in water.

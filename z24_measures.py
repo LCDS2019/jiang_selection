@@ -13,7 +13,7 @@ def sim_spath(G,i,j):
         except:
             res=0
 
-    #return("{:.2f}".format(float(res)))
-    return(res)
+    return("{:.2f}".format(float(res)))
+    #return(res)
 
 

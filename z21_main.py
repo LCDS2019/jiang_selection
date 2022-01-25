@@ -19,7 +19,7 @@ import z22_functions as z22
 import z23_ontology as z23
 import z24_measures as z24
 import z25_ccsm as z25
-
+import z26_nlp01 as z26
 
 ##########################################################################################
 #Setup
@@ -51,7 +51,7 @@ print(''.center(81, '#'))
 #print('Dir: '+onto_path)
 #print('Ontologia selecionada: '+ontologia)
 
-z23.load_ontology(db_system,onto_path,ontologia)
+data,nodes=z23.load_ontology(db_system,onto_path,ontologia)
 
 print('')
 
@@ -92,7 +92,7 @@ coluna_molecula = 'molecula'
 coluna_alvo = 'IC50'
 frac = 1  # fração do arquivo alvo
 frac_aleatorio = 0 # 1-sim / 0-não - permite # diferente de linhas nos arquivos
-repetition = 1 #1 - diferentes # de colunas / 2 - iguais # de colunas
+repetition = 2 #1 - diferentes # de colunas / 2 - iguais # de colunas
 
 
 z22.arquivos_sinteticos(db_in,repetition,num_arquivos,df_feature,colunas_arquivos,frac,frac_aleatorio)
@@ -107,21 +107,92 @@ print(''.center(81, '#'))
 print('')
 print('* - '+'sim_spath')
 
-
-z25.ccsm()
-'''
-print('')
-
+z25.ccsm(data,nodes,db_system,ontologia)
 
 print('')
 
 ##########################################################################################
-print(''.ljust(81, '#'))
-print('#'+' NLP - Algoritmo 01 '.ljust(80, '#'))
-print(''.ljust(81, '#'))
+print(''.center(81, '#'))
+print('#'+' NLP - Algoritmo 01 '.center(80, '#'))
+print(' NLP ”extract terms through NLP” & ”compute similarity score” '.center(81, '#'))
+print(''.center(81, '#'))
+
+path_descriptions = str(filename_description)
+
+print(''.center(80, '-'))
+print(' Datasets disponíveis para seleção '.center(80, '-'))
+print(' path_descriptions '.center(80, '-'))
+print(''.center(80, '-'))
+print('')
+
+print(path_descriptions)
+
+#####################################################
+print(80 * '-')
+
+print('Stopwords:')
+english_stops=z26.english_stops()
+
+print('Punctuations:')
+punctuations=z26.punctuations()
+
+print(80 * '-')
+#####################################################
+
+path = db_in
+arr = os.listdir(path)
+
+lista = [arq for arq in arr if (arq.startswith("zarq_"))]
+lista.sort(reverse=False)
 
 print('')
 
+try:
+    descriptions = pd.read_csv(path_descriptions, sep='|')
+    print("Arquivo de descrições localizado!")
+except:
+    print("Arquivo de descrições não localizado!")
+
+
+for zarq_i in lista:
+
+    print(''.center(80, '*'))
+    print('Arquivo zarq: '+zarq_i)
+
+
+    zarq = pd.read_csv(db_in+zarq_i, sep='|')
+
+    l=[]
+    for i in zarq.columns:
+        l.append(i)
+
+    df = pd.DataFrame(l, columns=['Atribute'])
+
+    dfl=pd.merge(df, descriptions, on=['Atribute'], how='left')
+    #print(dfl)
+
+    M = []
+
+    for index, row in dfl.iterrows() :
+        atributo=str(row[0])
+        #print(atributo)
+
+        row=str(row[1])
+        #print(row)
+
+        td = z26.tokenize_descriptions(index, atributo, row, english_stops, punctuations)
+        print(td)
+        #z26.td_similarity_scores(db_out,z26.ontology_selected,zarq_i,data, td)
+
+    #print(zarq_i.split('.')[0],td)
+    print(''.center(80, '*'))
+
+print('')
+
+print(''.ljust(81, '#'))
+
+print('')
+'''
 ##########################################################################################
 print(''.ljust(81, '#'))
 print('#'+' NLP - Algoritmo 02 '.ljust(80, '#'))

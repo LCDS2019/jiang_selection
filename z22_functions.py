@@ -24,7 +24,7 @@ def create_ontology_menu(onto_path):
     dic_onto=dict(menu_list)
 
     print('')
-    ontology_selection = 6
+    ontology_selection = 1
     #ontology_selection = input('Qual ontologia deseja analisar?')
 
     ontology_selected = dic_onto[int(ontology_selection)]
@@ -143,7 +143,7 @@ def arquivos_sinteticos(db_in,repetition,num_arquivos,df_feature,colunas_arquivo
         print('')
 
         colunas = list(df_feature.columns)
-        #print(colunas)
+        print(colunas)
         print('Quantidade de colunas no dataframe de características: '+str(len(colunas)))
         linhas = df_feature.shape[0]
         print('Quantidade de colunas no dataframe de características: '+str(linhas))

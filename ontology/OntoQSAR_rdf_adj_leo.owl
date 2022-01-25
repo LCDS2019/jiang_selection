@@ -1,0 +1,994 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#"
+     xml:base="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_025aacb1_f937_4188_a953_8b3a9590556a -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_025aacb1_f937_4188_a953_8b3a9590556a">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_44b6f4e5_862d_493e_b108_f32a44bdf9b9"/>
+        <rdfs:label xml:lang="en">Cycle count containing heteroatoms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_046764a1_9628_4f15_bf82_c7a65ee44630 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_046764a1_9628_4f15_bf82_c7a65ee44630">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_14cc67c8_e782_471e_b1a5_b1dd8c6b5921"/>
+        <rdfs:label xml:lang="en">Transition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_04a37eb7_b5e0_4a67_bcbe_2f62cd4a2f48 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_04a37eb7_b5e0_4a67_bcbe_2f62cd4a2f48">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_9543ef5c_dfb9_42ff_99ab_121c0e82836c"/>
+        <rdfs:label xml:lang="en">Regression statistics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_05235262_0b17_4c39_a13d_33e6cd5193a5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_05235262_0b17_4c39_a13d_33e6cd5193a5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_2eb8ba06_504c_4e36_acab_cd89be7394ec"/>
+        <rdfs:label xml:lang="en">Excretion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_0607a5e4_b379_41ae_995f_0eb368daaf66 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_0607a5e4_b379_41ae_995f_0eb368daaf66">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c4f012bd_624f_492a_bf57_ffab9229603a"/>
+        <rdfs:label xml:lang="en">Polar surface area descriptor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_0774afe3_3d4d_4266_b2e9_57efd84ea07e -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_0774afe3_3d4d_4266_b2e9_57efd84ea07e">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_4f949496_2b2c_4018_b986_6c5ff1ad5b81"/>
+        <rdfs:label xml:lang="en">Phenols</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_10a6f11b_719f_42c6_8810_35156520730f -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_10a6f11b_719f_42c6_8810_35156520730f">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_14cc67c8_e782_471e_b1a5_b1dd8c6b5921"/>
+        <rdfs:label xml:lang="en">Esolv. water</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_1332f057_b234_463f_ba1e_e3950c8fcc8e -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_1332f057_b234_463f_ba1e_e3950c8fcc8e">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_4f949496_2b2c_4018_b986_6c5ff1ad5b81"/>
+        <rdfs:label xml:lang="en">Benzene</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_14cc67c8_e782_471e_b1a5_b1dd8c6b5921 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_14cc67c8_e782_471e_b1a5_b1dd8c6b5921">
+        <rdfs:label xml:lang="en">Quantum chemistry computational method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_195b0740_a020_45d3_9060_9a7d4cea8e26 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_195b0740_a020_45d3_9060_9a7d4cea8e26">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_14cc67c8_e782_471e_b1a5_b1dd8c6b5921"/>
+        <rdfs:label xml:lang="en">abs máx (nM)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_19a4fc2c_b659_4f45_9cff_5b9f9ce9b593 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_19a4fc2c_b659_4f45_9cff_5b9f9ce9b593">
+        <rdfs:label xml:lang="en">Diagnosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_1ba6c116_a793_4bb1_b07e_7cd3fedea490 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_1ba6c116_a793_4bb1_b07e_7cd3fedea490">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_14cc67c8_e782_471e_b1a5_b1dd8c6b5921"/>
+        <rdfs:label xml:lang="en">Valence electron computational method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_1bbcbf5f_ba3b_4e48_b1d3_d0c1c6120b9e -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_1bbcbf5f_ba3b_4e48_b1d3_d0c1c6120b9e">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c4f012bd_624f_492a_bf57_ffab9229603a"/>
+        <rdfs:label xml:lang="en">Moreau-Broto autocorrelation (polarizability) descriptors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_1c73117f_374e_4b62_9bba_f802e6995712 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_1c73117f_374e_4b62_9bba_f802e6995712">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c4f012bd_624f_492a_bf57_ffab9229603a"/>
+        <rdfs:label xml:lang="en">Finger prints</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_1ca5f104_e48d_4922_909e_d233e4b15244 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_1ca5f104_e48d_4922_909e_d233e4b15244">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_14cc67c8_e782_471e_b1a5_b1dd8c6b5921"/>
+        <rdfs:label xml:lang="en">ZeroE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_217d08c3_abe7_4eec_be4c_d35c3c6716be -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_217d08c3_abe7_4eec_be4c_d35c3c6716be">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_2eb8ba06_504c_4e36_acab_cd89be7394ec"/>
+        <rdfs:label xml:lang="en">Absorption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_223c5a6b_e81c_4996_a734_0b5b89dbc58f -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_223c5a6b_e81c_4996_a734_0b5b89dbc58f">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_ea54b4aa_48f1_474f_a8f2_d5d0df753f56"/>
+        <rdfs:label xml:lang="en">Genetic Algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_25a8c1da_5a4d_44bc_9292_513ebbc65806 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_25a8c1da_5a4d_44bc_9292_513ebbc65806">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_14cc67c8_e782_471e_b1a5_b1dd8c6b5921"/>
+        <rdfs:label xml:lang="en">Semi-empirical quantum chemistry method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_27692275_2fe2_458c_902e_554a10033b56 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_27692275_2fe2_458c_902e_554a10033b56">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c4f012bd_624f_492a_bf57_ffab9229603a"/>
+        <rdfs:label xml:lang="en">Lipinski</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_29951225_6991_4b00_9dcc_481bf8c32f2f -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_29951225_6991_4b00_9dcc_481bf8c32f2f">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_3541e39f_651a_45b0_b24a_ec4eed9ef0cb"/>
+        <rdfs:label xml:lang="en">Sum of atom-type H E-state (NH2)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_2cd7dc65_a4eb_4ca8_a104_c9887fdfaf3b -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_2cd7dc65_a4eb_4ca8_a104_c9887fdfaf3b">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_2eb8ba06_504c_4e36_acab_cd89be7394ec"/>
+        <rdfs:label xml:lang="en">Tissue distribution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_2e638292_bf03_4525_a3ea_419551c2284f -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_2e638292_bf03_4525_a3ea_419551c2284f">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c4f012bd_624f_492a_bf57_ffab9229603a"/>
+        <rdfs:label xml:lang="en">Hydrogen bond donors count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_2e74a55a_c6d1_468f_94ee_c002051b842c -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_2e74a55a_c6d1_468f_94ee_c002051b842c">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c4f012bd_624f_492a_bf57_ffab9229603a"/>
+        <rdfs:label xml:lang="en">Moreau-Broto autocorrelation (first ionization potential) descriptors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_2eb8ba06_504c_4e36_acab_cd89be7394ec -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_2eb8ba06_504c_4e36_acab_cd89be7394ec">
+        <rdfs:label xml:lang="en">Phamacokinetics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_321ec9fd_9351_421e_be83_203fef8e4cf1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_321ec9fd_9351_421e_be83_203fef8e4cf1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c22135a8_590f_423a_b7db_a1c40e42a3bc"/>
+        <rdfs:label xml:lang="en">linear QSAR</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_3541e39f_651a_45b0_b24a_ec4eed9ef0cb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_3541e39f_651a_45b0_b24a_ec4eed9ef0cb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c4f012bd_624f_492a_bf57_ffab9229603a"/>
+        <rdfs:label xml:lang="en">Atom type H E-state</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_3b581e46_5e83_4c9c_8edf_43f8dbb3c6ff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_3b581e46_5e83_4c9c_8edf_43f8dbb3c6ff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_4f949496_2b2c_4018_b986_6c5ff1ad5b81"/>
+        <rdfs:label xml:lang="en">Amine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_3d5916d2_fb62_44e4_bf72_b6efabe0b3b6 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_3d5916d2_fb62_44e4_bf72_b6efabe0b3b6">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_14cc67c8_e782_471e_b1a5_b1dd8c6b5921"/>
+        <rdfs:label xml:lang="en">contribution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_40fbf9f9_3580_470a_8ed5_0b3dac5d4804 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_40fbf9f9_3580_470a_8ed5_0b3dac5d4804">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_4f949496_2b2c_4018_b986_6c5ff1ad5b81"/>
+        <rdfs:label xml:lang="en">Ester</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_4240205d_b5ab_4afa_9de0_4514021785d7 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_4240205d_b5ab_4afa_9de0_4514021785d7">
+        <rdfs:label xml:lang="en">Biological target</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_42b16682_0f6f_4544_9169_771c5f61a4c6 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_42b16682_0f6f_4544_9169_771c5f61a4c6">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_e3bc3a6e_4477_4055_b12f_3c1b7e0f6a3a"/>
+        <rdfs:label xml:lang="en">in silico</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_43ac5f13_ae32_4d00_a51c_bc3a97563c97 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_43ac5f13_ae32_4d00_a51c_bc3a97563c97">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_7d2d6c23_5d78_4a68_a6fd_21ca7dc3052d"/>
+        <rdfs:label xml:lang="en">IC50</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_44187110_e2d9_427f_ac09_a4623ee36a74 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_44187110_e2d9_427f_ac09_a4623ee36a74">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c4f012bd_624f_492a_bf57_ffab9229603a"/>
+        <rdfs:label xml:lang="en">Heavy atom count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_44b6f4e5_862d_493e_b108_f32a44bdf9b9 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_44b6f4e5_862d_493e_b108_f32a44bdf9b9">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c4f012bd_624f_492a_bf57_ffab9229603a"/>
+        <rdfs:label xml:lang="en">Cycle count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_458ac041_00ff_4d73_bb46_ed7c7f2f0b5c -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_458ac041_00ff_4d73_bb46_ed7c7f2f0b5c">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_14cc67c8_e782_471e_b1a5_b1dd8c6b5921"/>
+        <rdfs:label xml:lang="en">Hartree-fock method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_45d11581_855d_4603_a2c7_eb41ebb3015e -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_45d11581_855d_4603_a2c7_eb41ebb3015e">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c4f012bd_624f_492a_bf57_ffab9229603a"/>
+        <rdfs:label xml:lang="en">Molar refractivity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_492ef7f7_7b39_4cc1_982a_73d551b3a6d5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_492ef7f7_7b39_4cc1_982a_73d551b3a6d5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c4f012bd_624f_492a_bf57_ffab9229603a"/>
+        <rdfs:label xml:lang="en">Zagreb index</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_4c46085d_e0ad_4b9e_b316_f3c08b4e5c4d -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_4c46085d_e0ad_4b9e_b316_f3c08b4e5c4d">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c4f012bd_624f_492a_bf57_ffab9229603a"/>
+        <rdfs:label xml:lang="en">Partition coefficient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_4e511d76_24d1_42dd_9716_b424c617b3e5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_4e511d76_24d1_42dd_9716_b424c617b3e5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_71a7eccc_bee8_4dff_9d19_250c024f39e8"/>
+        <rdfs:label xml:lang="en">Rotatable bond count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_4e83f252_0d23_46d4_900c_4a5fb812688a -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_4e83f252_0d23_46d4_900c_4a5fb812688a">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_3541e39f_651a_45b0_b24a_ec4eed9ef0cb"/>
+        <rdfs:label xml:lang="en">Minimum E-states for (strong) hidrogen bond donors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_4ee72d89_9421_4d15_8363_4f210804ad72 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_4ee72d89_9421_4d15_8363_4f210804ad72">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_bfd08726_ebd2_4514_be9c_0bc3bd11c9ba"/>
+        <rdfs:label xml:lang="en">Semi supervised learning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_4f949496_2b2c_4018_b986_6c5ff1ad5b81 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_4f949496_2b2c_4018_b986_6c5ff1ad5b81">
+        <rdfs:label xml:lang="en">Functional Group descriptor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_53428af0_0318_430b_a4dc_989565638d40 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_53428af0_0318_430b_a4dc_989565638d40">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c4f012bd_624f_492a_bf57_ffab9229603a"/>
+        <rdfs:label xml:lang="en">Moreau-Broto autocorrelation (van der waals volumes) descriptors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_55d1efc8_acec_4d9e_acb0_dc10ca853a37 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_55d1efc8_acec_4d9e_acb0_dc10ca853a37">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_14cc67c8_e782_471e_b1a5_b1dd8c6b5921"/>
+        <rdfs:label xml:lang="en">ab initio quantum chemistry computational method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_56672533_b2c7_437b_97a6_553b0fdea0eb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_56672533_b2c7_437b_97a6_553b0fdea0eb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_ea54b4aa_48f1_474f_a8f2_d5d0df753f56"/>
+        <rdfs:label xml:lang="en">Trial and error</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_59dd9c9c_f12d_484a_98e0_69284b24911f -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_59dd9c9c_f12d_484a_98e0_69284b24911f">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_9543ef5c_dfb9_42ff_99ab_121c0e82836c"/>
+        <rdfs:label xml:lang="en">Split validation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_5bd72f2f_cb83_4f7c_b88e_596fecdd6122 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_5bd72f2f_cb83_4f7c_b88e_596fecdd6122">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c22135a8_590f_423a_b7db_a1c40e42a3bc"/>
+        <rdfs:label xml:lang="en">three dimensional QSAR</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_5dc21adc_5e8a_439b_b7cf_ed5ffb76155b -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_5dc21adc_5e8a_439b_b7cf_ed5ffb76155b">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_3541e39f_651a_45b0_b24a_ec4eed9ef0cb"/>
+        <rdfs:label xml:lang="en">Minimum E-states for (strong) hidrogen bond acceptors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_5dfd065b_d2ce_4659_8fc6_fef6ba7eff25 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_5dfd065b_d2ce_4659_8fc6_fef6ba7eff25">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_4f949496_2b2c_4018_b986_6c5ff1ad5b81"/>
+        <rdfs:label xml:lang="en">Amide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_5e8c1252_e35b_4cc7_bc3d_91f7bda1bb73 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_5e8c1252_e35b_4cc7_bc3d_91f7bda1bb73">
+        <rdfs:label xml:lang="en">Phamacophoric group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_71a7eccc_bee8_4dff_9d19_250c024f39e8 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_71a7eccc_bee8_4dff_9d19_250c024f39e8">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c4f012bd_624f_492a_bf57_ffab9229603a"/>
+        <rdfs:label xml:lang="en">Bond count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_72ec6b5f_03df_4d16_a723_dd84745e51e6 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_72ec6b5f_03df_4d16_a723_dd84745e51e6">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_9543ef5c_dfb9_42ff_99ab_121c0e82836c"/>
+        <rdfs:label xml:lang="en">Internal validation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_735b4ef3_4015_4fbc_900d_999c5a4855a7 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_735b4ef3_4015_4fbc_900d_999c5a4855a7">
+        <rdfs:label xml:lang="en">Inhibitor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_75412faa_65c0_46db_9afa_89c845370a4c -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_75412faa_65c0_46db_9afa_89c845370a4c">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_7d2d6c23_5d78_4a68_a6fd_21ca7dc3052d"/>
+        <rdfs:label xml:lang="en">pIC50</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_76648eee_b254_4dd7_bb7e_8194a4e6cd8d -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_76648eee_b254_4dd7_bb7e_8194a4e6cd8d">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_9543ef5c_dfb9_42ff_99ab_121c0e82836c"/>
+        <rdfs:label xml:lang="en">External validation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_79e71537_50bb_4688_ad9b_57f7c78c8255 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_79e71537_50bb_4688_ad9b_57f7c78c8255">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_4f949496_2b2c_4018_b986_6c5ff1ad5b81"/>
+        <rdfs:label xml:lang="en">Ether</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_7a51863b_b460_4404_9c06_31dfc1646c7f -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_7a51863b_b460_4404_9c06_31dfc1646c7f">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_7d2d6c23_5d78_4a68_a6fd_21ca7dc3052d"/>
+        <rdfs:label xml:lang="en">EC50</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_7b2be749_f882_451e_9749_9fb6abcb018e -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_7b2be749_f882_451e_9749_9fb6abcb018e">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_2e638292_bf03_4525_a3ea_419551c2284f"/>
+        <rdfs:label xml:lang="en">Hydrogen bond donors count (using Lipinski&apos;s definition)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_7d2d6c23_5d78_4a68_a6fd_21ca7dc3052d -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_7d2d6c23_5d78_4a68_a6fd_21ca7dc3052d">
+        <rdfs:label xml:lang="en">Biological activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_8569237d_55d8_41c6_99af_85cc1b5be202 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_8569237d_55d8_41c6_99af_85cc1b5be202">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c4f012bd_624f_492a_bf57_ffab9229603a"/>
+        <rdfs:label xml:lang="en">Atom count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_87f8a81d_57cf_4536_b400_e792f389d34b -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_87f8a81d_57cf_4536_b400_e792f389d34b">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_14cc67c8_e782_471e_b1a5_b1dd8c6b5921"/>
+        <rdfs:label xml:lang="en">Pi-electron computational method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_8dde44ee_76eb_4c5e_8c49_a1fa5a1beabe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_8dde44ee_76eb_4c5e_8c49_a1fa5a1beabe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c22135a8_590f_423a_b7db_a1c40e42a3bc"/>
+        <rdfs:label xml:lang="en">two dimensional QSAR</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_91e50a20_33bd_43e0_97b3_1899925ec744 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_91e50a20_33bd_43e0_97b3_1899925ec744">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_3541e39f_651a_45b0_b24a_ec4eed9ef0cb"/>
+        <rdfs:label xml:lang="en">Sum of atom-type H E-state (SH2)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_9543ef5c_dfb9_42ff_99ab_121c0e82836c -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_9543ef5c_dfb9_42ff_99ab_121c0e82836c">
+        <rdfs:label xml:lang="en">Validation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_9af82af7_f70d_475e_9b9a_e875da1fa2a0 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_9af82af7_f70d_475e_9b9a_e875da1fa2a0">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_7d2d6c23_5d78_4a68_a6fd_21ca7dc3052d"/>
+        <rdfs:label xml:lang="en">pKi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_9affb2c6_f09a_43f3_ac15_63ac90a26b1b -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_9affb2c6_f09a_43f3_ac15_63ac90a26b1b">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_14cc67c8_e782_471e_b1a5_b1dd8c6b5921"/>
+        <rdfs:label xml:lang="en">FreeE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_9bc6d3f6_0642_4666_98fe_f3cae62fcb82 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_9bc6d3f6_0642_4666_98fe_f3cae62fcb82">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c4f012bd_624f_492a_bf57_ffab9229603a"/>
+        <rdfs:label xml:lang="en">Molecular mass</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_9c198936_b7b4_4cbe_811d_67f509073177 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_9c198936_b7b4_4cbe_811d_67f509073177">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c4f012bd_624f_492a_bf57_ffab9229603a"/>
+        <rdfs:label xml:lang="en">Plane polarized light method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_9dd572aa_613d_4fc5_a5e3_1d9b63334fc4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_9dd572aa_613d_4fc5_a5e3_1d9b63334fc4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c4f012bd_624f_492a_bf57_ffab9229603a"/>
+        <rdfs:label xml:lang="en">Aromatic atom count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_9e8f5f44_1d6c_40e0_a483_23c57a93e3da -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_9e8f5f44_1d6c_40e0_a483_23c57a93e3da">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_3541e39f_651a_45b0_b24a_ec4eed9ef0cb"/>
+        <rdfs:label xml:lang="en">Sum of atom-type H E-state (OH)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_a1284ad0_f338_4d3c_aa8c_54f1c90b0c24 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_a1284ad0_f338_4d3c_aa8c_54f1c90b0c24">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_14cc67c8_e782_471e_b1a5_b1dd8c6b5921"/>
+        <rdfs:label xml:lang="en">Dipole</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_a564dcc6_02d7_4f6c_8104_5b57c799a829 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_a564dcc6_02d7_4f6c_8104_5b57c799a829">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c4f012bd_624f_492a_bf57_ffab9229603a"/>
+        <rdfs:label xml:lang="en">Basic group count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_a98ab1c7_264e_46a7_bbcb_ae936ef25a16 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_a98ab1c7_264e_46a7_bbcb_ae936ef25a16">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c4f012bd_624f_492a_bf57_ffab9229603a"/>
+        <rdfs:label xml:lang="en">BBB</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_a9f7f304_1c47_4099_a4f4_ab606ff35e0c -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_a9f7f304_1c47_4099_a4f4_ab606ff35e0c">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_4f949496_2b2c_4018_b986_6c5ff1ad5b81"/>
+        <rdfs:label xml:lang="en">Aldehyde</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_aa1b5dda_f70d_4e12_9fc9_6862d3d1efcd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_aa1b5dda_f70d_4e12_9fc9_6862d3d1efcd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_4f949496_2b2c_4018_b986_6c5ff1ad5b81"/>
+        <rdfs:label xml:lang="en">Carboxilic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_adaee807_3db3_47d3_8613_157d3c33c8a2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_adaee807_3db3_47d3_8613_157d3c33c8a2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c4f012bd_624f_492a_bf57_ffab9229603a"/>
+        <rdfs:label xml:lang="en">Moreau-Broto autocorrelation (mass) descriptors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_b41c9972_dab7_43f3_af4d_5ba59be9af90 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_b41c9972_dab7_43f3_af4d_5ba59be9af90">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c4f012bd_624f_492a_bf57_ffab9229603a"/>
+        <rdfs:label xml:lang="en">AlogP descriptor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_b4a0af0f_03c2_4cc0_9fd9_33a82b417029 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_b4a0af0f_03c2_4cc0_9fd9_33a82b417029">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_e3bc3a6e_4477_4055_b12f_3c1b7e0f6a3a"/>
+        <rdfs:label xml:lang="en">bioassay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_b7df69e8_f220_493f_8c48_97c12ec534d8 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_b7df69e8_f220_493f_8c48_97c12ec534d8">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_bfd08726_ebd2_4514_be9c_0bc3bd11c9ba"/>
+        <rdfs:label xml:lang="en">Supervised Learning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_bbd0ebd9_dd54_485f_8cec_89817619682a -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_bbd0ebd9_dd54_485f_8cec_89817619682a">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_4f949496_2b2c_4018_b986_6c5ff1ad5b81"/>
+        <rdfs:label xml:lang="en">Hydrocarbon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_bd0ebf8f_f4ed_4d67_92f0_13c4c5153b4b -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_bd0ebf8f_f4ed_4d67_92f0_13c4c5153b4b">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_9543ef5c_dfb9_42ff_99ab_121c0e82836c"/>
+        <rdfs:label xml:lang="en">Cross-validation information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_bea8fffc_6f35_4b16_885a_abc4151c0bab -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_bea8fffc_6f35_4b16_885a_abc4151c0bab">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c22135a8_590f_423a_b7db_a1c40e42a3bc"/>
+        <rdfs:label xml:lang="en">non-linear dimensional QSAR</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_bfd08726_ebd2_4514_be9c_0bc3bd11c9ba -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_bfd08726_ebd2_4514_be9c_0bc3bd11c9ba">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_ea54b4aa_48f1_474f_a8f2_d5d0df753f56"/>
+        <rdfs:label xml:lang="en">Maching Learning Algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c22135a8_590f_423a_b7db_a1c40e42a3bc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c22135a8_590f_423a_b7db_a1c40e42a3bc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_42b16682_0f6f_4544_9169_771c5f61a4c6"/>
+        <rdfs:label xml:lang="en">QSAR descriptor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c4f012bd_624f_492a_bf57_ffab9229603a -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c4f012bd_624f_492a_bf57_ffab9229603a">
+        <rdfs:label xml:lang="en">Chemical descriptor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c791cc1f_0289_49a9_8b45_9d9e2bacd125 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c791cc1f_0289_49a9_8b45_9d9e2bacd125">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_14cc67c8_e782_471e_b1a5_b1dd8c6b5921"/>
+        <rdfs:label xml:lang="en">Charges</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c891fffa_2a09_4064_b3d4_94a69145790d -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c891fffa_2a09_4064_b3d4_94a69145790d">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_bfd08726_ebd2_4514_be9c_0bc3bd11c9ba"/>
+        <rdfs:label xml:lang="en">Unsupervised learning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_ca3f3e41_5a91_4d8c_a9cb_0f511bb84736 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_ca3f3e41_5a91_4d8c_a9cb_0f511bb84736">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_14cc67c8_e782_471e_b1a5_b1dd8c6b5921"/>
+        <rdfs:label xml:lang="en">Osc. force</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_ca9850c4_07bd_450b_aefe_b3a377fb22ae -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_ca9850c4_07bd_450b_aefe_b3a377fb22ae">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_3541e39f_651a_45b0_b24a_ec4eed9ef0cb"/>
+        <rdfs:label xml:lang="en">Sum of atom-type H E-state (NH)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_cad2a3d9_f918_42de_8bdf_262aa1680fb6 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_cad2a3d9_f918_42de_8bdf_262aa1680fb6">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_9543ef5c_dfb9_42ff_99ab_121c0e82836c"/>
+        <rdfs:label xml:lang="en">Y scrambling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_cdd517db_9b9d_4100_b835_17d1b2671818 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_cdd517db_9b9d_4100_b835_17d1b2671818">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_ea54b4aa_48f1_474f_a8f2_d5d0df753f56"/>
+        <rdfs:label xml:lang="en">Monte Carlo algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_d811f9a4_cf99_476b_9404_30e8fd65463f -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_d811f9a4_cf99_476b_9404_30e8fd65463f">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c4f012bd_624f_492a_bf57_ffab9229603a"/>
+        <rdfs:label xml:lang="en">Atomic QSAR descriptor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_d837897b_82bb_4f24_a537_9ab30dd97efa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_d837897b_82bb_4f24_a537_9ab30dd97efa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_14cc67c8_e782_471e_b1a5_b1dd8c6b5921"/>
+        <rdfs:label xml:lang="en">abs máx (eV)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_d86804fb_9e0c_407a_87b2_20f837d2f29e -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_d86804fb_9e0c_407a_87b2_20f837d2f29e">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_735b4ef3_4015_4fbc_900d_999c5a4855a7"/>
+        <rdfs:label xml:lang="en">Drug</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_da310e26_a79b_4396_ab03_926a13cea6e6 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_da310e26_a79b_4396_ab03_926a13cea6e6">
+        <rdfs:label xml:lang="en">Publication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_dabfba80_ef02_4c3f_a7ff_5e72ba97d4a5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_dabfba80_ef02_4c3f_a7ff_5e72ba97d4a5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_4f949496_2b2c_4018_b986_6c5ff1ad5b81"/>
+        <rdfs:label xml:lang="en">Alcohol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_db5e4c7c_209b_4746_86d8_5890eb2b782a -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_db5e4c7c_209b_4746_86d8_5890eb2b782a">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c4f012bd_624f_492a_bf57_ffab9229603a"/>
+        <rdfs:label xml:lang="en">Highest occupied molecular orbital energy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_e21a8b03_7824_4672_9f77_750290e09f71 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_e21a8b03_7824_4672_9f77_750290e09f71">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c4f012bd_624f_492a_bf57_ffab9229603a"/>
+        <rdfs:label xml:lang="en">Hydrogen bond acceptors count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_e3bc3a6e_4477_4055_b12f_3c1b7e0f6a3a -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_e3bc3a6e_4477_4055_b12f_3c1b7e0f6a3a">
+        <rdfs:label xml:lang="en">Assay method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_e648c1e1_a7ba_473e_b610_d5d87408427a -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_e648c1e1_a7ba_473e_b610_d5d87408427a">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c4f012bd_624f_492a_bf57_ffab9229603a"/>
+        <rdfs:label xml:lang="en">Lowest Unoccupied Molecular Orbital Energy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_e6c7a211_4a13_454a_9e87_3f6035299fcd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_e6c7a211_4a13_454a_9e87_3f6035299fcd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_c4f012bd_624f_492a_bf57_ffab9229603a"/>
+        <rdfs:label xml:lang="en">Acidic group count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_e91b78ac_0cc9_4a43_be96_29fde6368dae -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_e91b78ac_0cc9_4a43_be96_29fde6368dae">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_2eb8ba06_504c_4e36_acab_cd89be7394ec"/>
+        <rdfs:label xml:lang="en">Metabolism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_ea54b4aa_48f1_474f_a8f2_d5d0df753f56 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_ea54b4aa_48f1_474f_a8f2_d5d0df753f56">
+        <rdfs:label xml:lang="en">Algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_f002f389_5aa4_4395_afa7_bb40521bf2d7 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_f002f389_5aa4_4395_afa7_bb40521bf2d7">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_e3bc3a6e_4477_4055_b12f_3c1b7e0f6a3a"/>
+        <rdfs:label xml:lang="en">in vivo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_f0ff4e9c_5711_4abf_a469_e13cac0226d5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_f0ff4e9c_5711_4abf_a469_e13cac0226d5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_e21a8b03_7824_4672_9f77_750290e09f71"/>
+        <rdfs:label xml:lang="en">Hydrogen bond acceptors count (using Lipinski&apos;s definition)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_f116bd8b_07ba_4ec0_beff_c1a153dea508 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_f116bd8b_07ba_4ec0_beff_c1a153dea508">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_e3bc3a6e_4477_4055_b12f_3c1b7e0f6a3a"/>
+        <rdfs:label xml:lang="en">in vitro</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_f4acd924_2f4d_4576_a29c_3d120ee2bdf6 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_f4acd924_2f4d_4576_a29c_3d120ee2bdf6">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_2eb8ba06_504c_4e36_acab_cd89be7394ec"/>
+        <rdfs:label xml:lang="en">Toxicity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_f759ecaf_1389_4bb5_9e67_bac7710e27b6 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_f759ecaf_1389_4bb5_9e67_bac7710e27b6">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_19a4fc2c_b659_4f45_9cff_5b9f9ce9b593"/>
+        <rdfs:label xml:lang="en">Tumor size</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_f77cac73_99b0_4d0c_907b_69ea91c5ae2e -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_f77cac73_99b0_4d0c_907b_69ea91c5ae2e">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2022/0/untitled-ontology-12#OWLClass_4f949496_2b2c_4018_b986_6c5ff1ad5b81"/>
+        <rdfs:label xml:lang="en">Ketone</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

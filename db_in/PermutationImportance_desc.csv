@@ -1,0 +1,145 @@
+Atribute|Description
+SMR_VSA3|MOE (Molecular Operating Environment) MR (molar refractivity) VSA (Van der Waals surface area) Descriptor 3 ( 1.82 <= x < 2.24).
+MID_N|Molecular ID on N atoms.
+BIC1|1-ordered bonding information content.
+AMID_N|Averaged molecular ID on N atoms.
+SssNH|Sum of E-state indices of the (-NH-) group.
+PEOE_VSA3|MOE (Molecular Operating Environment) Charge VSA (Van der Waals surface area) Descriptor 3 (-0.25 <= x < -0.20).
+Xch-6dv|6-ordered Chi chain weighted by valence electrons.
+AXp-6dv|6-ordered averaged Chi path weighted by valence electrons.
+AXp-5d|5-ordered averaged Chi path weighted by sigma electrons,
+EState_VSA4|E-State VSA (Van der Waals surface area) Descriptor 4 ( 0.72 <= x < 1.17).
+PEOE_VSA10|MOE (Molecular Operating Environment) Charge VSA (Van der Waals surface area) Descriptor 10 ( 0.10 <= x < 0.15).
+AATS3p|Averaged Moreau-Broto autocorrelation (describes how a property is distributed along the topological structure) of lag 3 (molecular graph by summing the products of atom weights of the terminal atoms of all the paths of the considered path length) weighted by polarizability.
+SpMax_A|SpMax of adjacency matrix.
+SaasN|Sum of E-state indices of the N in oxides.
+SpMAD_Dt|Spectral mean absolute diviation from Detourn matrix.
+AXp-4d|4-ordered averaged Chi path weighted by sigma electrons.
+AXp-6d|6-ordered averaged Chi path weighted by sigma electrons.
+Xch-5dv|5-ordered Chi chain weighted by valence electrons.
+JGI4|4-ordered mean topological charge.
+BalabanJ|The Balaban J index is a topological index which stands out for being able to differentiate between similar molecular structures, also known as degeneration tendency. The J index is determined from the distance matrix of the molecular structure (hydrogen is not taken into account).
+FilterItLogS|Filter-it™ LogS.
+MINaaCH|Minimum of (aaCH) group.
+JGI3|3-ordered mean topological charge.
+VSA_EState4|VSA (Van der Waals surface area) EState Descriptor 4 ( 5.41 <= x < 5.74).
+NssNH|Number of (-NH-) group.
+JGI5|5-ordered mean topological charge.
+AATS3v|Averaged Moreau-Broto autocorrelation (describes how a property is distributed along the topological structure) of lag 3 (molecular graph by summing the products of atom weights of the terminal atoms of all the paths of the considered path length) weighted by vdw volume.
+MATS3v|Moran coefficient of lag 3 (molecular graph by summing the products of atom weights of the terminal atoms of all the paths of the considered path length) weighted by vdw volume.
+SlogP_VSA8|MOE (Molecular Operating Environment) logP VSA (Van der Waals surface area) Descriptor 8 ( 0.25 <= x < 0.30).
+SpDiam_A|SpDiam of adjacency matrix.
+SlogP_VSA10|MOE (Molecular Operating Environment) logP VSA (Van der Waals surface area) Descriptor 10 ( 0.40 <= x < 0.50).
+SaaN|Sum of E-state indices of the N in aromatic ring.
+SMR_VSA9|MOE (Molecular Operating Environment) MR (molar refractivity) VSA (Van der Waals surface area) Descriptor 9 ( 3.80 < x < 4.00).
+AETA_beta_ns_d|Averaged delta contribution to valence electron mobile count.
+AXp-3d|3-ordered averaged Chi path weighted by sigma electrons.
+VSA_EState2|VSA (Van der Waals surface area) EState Descriptor 2 ( 4.78 <= x < 5.00).
+AATS1i|Averaged Moreau-Broto autocorrelation (describes how a property is distributed along the topological structure) of lag 1 (molecular graph by summing the products of atom weights of the terminal atoms of all the paths of the considered path length) weighted by ionization potential.
+VSA_EState1|VSA (Van der Waals surface area) EState Descriptor 1 (-inf < x < 4.78).
+Xch-7dv|7-ordered Chi chain weighted by valence electrons.
+GATS2i|Geary coefficient (a distance type function) of lag (molecular graph by summing the products of atom weights of the terminal atoms of all the paths of the considered path length) 2 weighted by ionization potential.
+MOMI-Z|Moment of inertia (axis = Z).
+FNSA3|Fractional charged partial negative surface area (version 3).
+FNSA4|Fractional charged partial negative surface area (version 4).
+RNCS|Relative negative charge surface area.
+FPSA3|Fractional charged partial positive surface area (MORDRED version 3).
+FNSA5|Fractional charged partial negative surface area (version 5).
+PBF|Plane of the best fit descriptor.
+PPSA3|Partial positive surface area (version 3).
+RPCS|Relative positive charge surface area.
+DPSA4|Difference in charged partial surface area (version 4).
+DPSA5|Difference in charged partial surface area (version 5).
+GeomRadius|Geometric radius.
+PNSA5|Partial negative surface area (version 5).
+MOMI-Y|Moment of inertia (axis = Y).
+GeomShapeIndex|Geometrical shape index.
+TPSA_x|Total polar surface area.
+GRAV|Heavy atom gravitational index.
+TASA|Total hydrophobic surface area.
+PNSA4|Partial negative surface area (version 4).
+Mor01se|3D-MoRSE weighted by sanderson EN (distance = 1).
+WPSA3|Surface weighted charged partial positive surface area (version 3).
+DPSA3|Difference in charged partial surface area (version 3).
+FNSA2|Fractional charged partial negative surface area (version 2).
+GeomDiameter|Geometric diameter.
+GeomPetitjeanIndex|Geometric Petitjean index.
+MOMI-X|Moment of inertia (axis = X).
+RASA|Moment of inertia (axis = Y).
+WPSA1|Surface weighted charged partial positive surface area (version 1).
+PNSA1|Partial negative surface area (version 1).
+Mor01p|3D-MoRSE weighted by polarizability (distance = 1).
+Mor01v|3D-MoRSE weighted by vdw volume (distance = 1).
+GRAVp|Heavy atom pair gravitational index.
+RPSA|Relative polar surface area.
+PNSA3|Partial negative surface area (version 3).
+WNSA1|Surface weighted charged partial negative surface area (version 1).
+WNSA5|Surface weighted charged partial negative surface area (version 5).
+DPSA1|Difference in charged partial surface area (version 1).
+WNSA4|Surface weighted charged partial negative surface area (version 4).
+WNSA3|Surface weighted charged partial negative surface area (version 3).
+Mor01m|3D-MoRSE weighted by mass (distance = 1).
+Num. of Rotatable bonds|Number of rotational bonds.
+CYP2D6 inhibitor|Interaction with cytochrome P450 (CYP) isoform 2D6.
+Synthetic Accessibility|Synthetic Accessibility, we've built our own piecemeal method, analyzing more than 13 million compounds immediately delivered by suppliers.
+Num. of Aromatic heavy atoms|Number of aromatic heavy atoms.
+Log Po/w Silicos-IT Log P|Partition coefficient between n-octanol and water calculated by a hybrid method based on 27 fragments and 7 topological descriptors.
+molar_refractivity|Molar refractivity.
+Log Po/w iLOGP|Partition coefficient between n-octanol and water, based on free energies of solvation in n-octanol and water calculated by the Generalized-Born model and solvent accessible surface area.
+Molecular Mass|Molecular Mass
+TPSA_y|Topological polar surface area.
+Solubility [Log S (SILICOS-IT)] (mg/ml)|Molar solubility in water calculated by the ESOL model in mg/ml.
+heavy_atom_count|Number of heavy atoms.
+Log Po/w MLOGP|Partition coefficient between n-octanol and water calculated by an archetype of topological method based on a linear relationship with 13 molecular descriptors implemented by Moriguchi, I, et al.
+Log Po/w WLOGP|Partition coefficient between n-octanol and water by a purely atomistic method based on the fragmentary system of Wildman and Crippen.
+Fraction Csp3|sp3 carbon fraction.
+hydrogen_bond_don0rs_count (using_Lipinski’s_definition)|Number of donor carbons.
+Solubility [Log S (SILICOS-IT)] (mol/l)|Molar solubility in water calculated by the SILICOS-IT model in mol/l.
+Solubility [Log S (Ali)] (mg/ml)|Molar solubility in water calculated by the SILICOS-IT model in mg/ml.
+CYP3A4 inhibitor|Interaction with cytochrome P450 (CYP) isoform 3A4.
+Log S (SILICOS-IT)|Molar solubility in water calculated by the SILICOS-IT model.
+Consensus Log P|Arithmetic mean of the values predicted by the five methods (iLOG, XLOGP3, WLOG, MLOG and SILICOS-IT).
+Log Kp (cm/s)|Skin penetration: QSPR model implemented by Potts et al.
+Solubility [Log S (Ali)] (mol/l)|Molar solubility in water calculated by the SILICOS-IT model in mol/l.
+P-gp substrate|P-glycoprotein substrate: SVM model built with 1033 molecules in training and 415 molecules in testing (10-fold CV: ACC = 0.72, AUC = 0.77; External: ACC = 0.88, AUC = 0.94).
+Log S (Ali)|Decimal logarithm of molar solubility in water calculated by Ali model.
+Veber filter|Lipinski filter (rule of 5) adapted by Veber et al. Rotatable links < (or equal to) 10; TPSA < (or equal to) 140.
+hydrogen_bond_acceptors_count (using_Lipinski’s_definition)|Number of acceptor carbons.
+Solubility [Log S (ESOL)] (mg/ml)|Molar solubility in water calculated by the ESOL model in mg/ml.
+Log S (ESOL)|Decimal logarithm of molar solubility in water calculated by the ESOL model.
+Log Po/w XLOGP3|Partition coefficient between n-octanol and water calculated by an atomistic method including corrective factors and knowledge-based library.
+Solubility [Log S (ESOL)] (mol/l)|Molar solubility in water calculated by the ESOL model in mol/l.
+CYP1A2 inhibitor|Interaction with cytochrome P450 (CYP) isoform 1A2.
+Leadlikeness|Since it is crucial for a chemist to judge whether a particular molecule is suitable to initiate lead optimization, in addition to structural filters, we implemented a rule-based method for lead similarity, which was adapted from Teague et al.
+Bioavailability Score|It predicts the probability that a compound will have at least 10% oral bioavailability in rats or measurable Caco-2 permeability.
+CYP2C19 inhibitor|Interaction with cytochrome P450 (CYP) isoform C19.
+Egan filter|Lipinski filter (rule of 5) adapted by Egan et al. WLOGP < (or equal to) 5.88; TPSA < (or equal) 131.6.
+CYP2C9 inhibitor|Interaction with cytochrome P450 (CYP) isoform C9.
+Brenk|Structural Alert, which consists of a list of 105 fragments identified by Brenk et al.5 as supposedly toxic, chemically reactive, metabolically unstable – or having properties responsible for poor pharmacokinetics.
+BBB|Blood-brain barrier permeant according to BOILED-egg yolk.
+Ghose filter|Lipinski filter (rule of 5) adapted by Ghose et al. 160 < (or equal to) MW < (or equal to) 480; -0.4 < (or equal) MLOGP < (or equal) 5.6; 40 < (or equal) MR < (or equal) 130; 20 < (or equal) atoms < (or equal) 70.
+PAINS|Indicator of interference compounds (hitters or promiscuous) that have a false positive on any target.
+log P|Log P (the log of the octanol-water partition coefficient), an indicator of hydrophobicity, using a HyperChem implementation of an atom fragment method developed by Ghose, Pritchett, and Crippen.
+Lowest_Unoccupied_Molecular_Orbital_Energy|LUMO (lowest unoccupied molecular orbital) orbital energy.
+Area (grid)|Van der Waals area, using a slower grid-based method than the approximated area.
+HOMO-LUMO Energy Difference (Hartree)|Difference between HOMO and LUMO orbitals energies (HOMO = highest occupied molecular orbital; LUMO = lowest unoccupied molecular orbital).
+Total Energy (water) (Hartree)|Molecular total energy in water.
+Oscillator Force (max. Transition)|Oscillator force of the maximum absorption transition.
+E solv. Water  (Hartree)|Difference between the total energy of the molecule in gas and water phase.
+Total Energy (gas phase) (Hartree)|Molecular total energy in gas phase.
+Absorption Energy (HOMO-LUMO transition) (eV)|Absorption Wavelength of the HOMO – LUMO transition (HOMO = highest occupied molecular orbital; LUMO = lowest unoccupied molecular orbital) in eV.
+Gibbs Free Energy|Gibbs free energy.
+Volume|Molecular volumes, delimited by Van der Waals.
+Contribuition (max. transition)|Maximum transition contribution amount.
+Highest_Occupied_Molecular_Orbital_Energy|HOMO (highest occupied molecular orbital) energy.
+Oscillator Force (HOMO-LUMO transition)|Oscillator force of the HOMO – LUMO transition (HOMO = highest occupied molecular orbital; LUMO = lowest unoccupied molecular orbital).
+Approximated area|Van der Waals area, using a fast approximation method described by W. C. Still et al.
+Dipole (water)|Molecular dipole in water.
+Dipole (gas phase)|Molecular dipole in gas phase.
+Contribution (HOMO-LUMO transition)|HOMO - LUMO transition contribution amount (HOMO = highest occupied molecular orbital; LUMO = lowest unoccupied molecular orbital)/
+Wavelength (HOMO-LUMO transition) (nm)|Maximum Absorption Wavelength in nm.
+Absorption Energy (max. Transition) (eV)|Maximum Absorption Wavelength in eV.
+Wavelength (max. Transition) (nm)|Maximum Absorption Wavelength in nm.
+Zero Point Energy|Zero point energy.
+IC50|Half-maximal inhibitory concentration: quantitative measure that indicates how much of a particular inhibitory substance (e.g. drug) is needed to inhibit, in vitro, a given biological process or biological component by 50%.
+pIC50|The negative log of the IC50 value in molar.

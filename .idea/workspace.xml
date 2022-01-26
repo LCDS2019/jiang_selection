@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="711605f3-3c17-4404-bd35-c2a6eb9784c8" name="Changes" comment="Version 2.1 - tokenize">
-      <change afterPath="$PROJECT_DIR$/z27_ngram.py" afterDir="false" />
+    <list default="true" id="711605f3-3c17-4404-bd35-c2a6eb9784c8" name="Changes" comment="Version 2.1 - using ngram">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/z21_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/z21_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z27_ngram.py" beforeDir="false" afterPath="$PROJECT_DIR$/z27_ngram.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643143206790</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Version 2.1 - using ngram">
+      <created>1643171855407</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1643171855407</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,6 +154,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Version 2.1" />
     <MESSAGE value="Version 2.1 - tokenize" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 2.1 - tokenize" />
+    <MESSAGE value="Version 2.1 - using ngram" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 2.1 - using ngram" />
   </component>
 </project>

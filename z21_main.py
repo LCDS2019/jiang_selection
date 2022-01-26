@@ -88,7 +88,7 @@ print(''.center(81, '#'))
 z22.apaga_arquivo_sintetico(db_in)
 
 num_arquivos = 5  # quantidade de arquivos
-colunas_arquivos = 5  # quantidade de colunas de saída
+colunas_arquivos = 2  # quantidade de colunas de saída
 coluna_molecula = 'molecula'
 coluna_alvo = 'IC50'
 frac = 1  # fração do arquivo alvo
@@ -173,28 +173,34 @@ for zarq_i in lista:
     #print(dfl)
 
     M = []
+    lista_n_grams = []
 
     for index, row in dfl.iterrows() :
-        print(''.center(40, '*'))
+        #print(''.center(40, '*'))
         atributo=str(row[0])
-        print('Atributo: '+ str(atributo))
+        #print('Atributo: '+ str(atributo))
 
         row=str(row[1])
-        print('Descrição: '+str(row))
+        #print('Descrição: '+str(row))
 
         # ngram ****************************************************************
         # n = 5
 
-        lista_n_grams = []
-
-        z27.get_ngrams_01(row)
+        td_gram=z27.get_ngrams_01(row)
 
         td = z26.tokenize_descriptions(index, atributo, row, english_stops, punctuations)
-        print('Td: '+str(td))
+        #print('Td: '+str(td))
 
-        print(''.center(40, '*'))
+        for i in td:
+            lista_n_grams.append(i)
+
+        for i in td_gram:
+            lista_n_grams.append(i)
+
+        #print(''.center(40, '*'))
 
     #print(zarq_i.split('.')[0],td)
+    print('TD:'+str(lista_n_grams))
     print(''.center(80, '*'))
 
 print('')

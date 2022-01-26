@@ -20,6 +20,7 @@ import z23_ontology as z23
 import z24_measures as z24
 import z25_ccsm as z25
 import z26_nlp01 as z26
+import z27_ngram as z27
 
 ##########################################################################################
 #Setup
@@ -86,8 +87,8 @@ print(''.center(81, '#'))
 
 z22.apaga_arquivo_sintetico(db_in)
 
-num_arquivos = 2  # quantidade de arquivos
-colunas_arquivos = 25  # quantidade de colunas de saída
+num_arquivos = 5  # quantidade de arquivos
+colunas_arquivos = 5  # quantidade de colunas de saída
 coluna_molecula = 'molecula'
 coluna_alvo = 'IC50'
 frac = 1  # fração do arquivo alvo
@@ -174,15 +175,24 @@ for zarq_i in lista:
     M = []
 
     for index, row in dfl.iterrows() :
+        print(''.center(40, '*'))
         atributo=str(row[0])
-        #print(atributo)
+        print('Atributo: '+ str(atributo))
 
         row=str(row[1])
-        #print(row)
+        print('Descrição: '+str(row))
+
+        # ngram ****************************************************************
+        # n = 5
+
+        lista_n_grams = []
+
+        z27.get_ngrams_01(row)
 
         td = z26.tokenize_descriptions(index, atributo, row, english_stops, punctuations)
-        print(td)
-        #z26.td_similarity_scores(db_out,z26.ontology_selected,zarq_i,data, td)
+        print('Td: '+str(td))
+
+        print(''.center(40, '*'))
 
     #print(zarq_i.split('.')[0],td)
     print(''.center(80, '*'))

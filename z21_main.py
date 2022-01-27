@@ -21,6 +21,7 @@ import z24_measures as z24
 import z25_ccsm as z25
 import z26_nlp01 as z26
 import z27_ngram as z27
+import z28_nlp02 as z28
 
 ##########################################################################################
 #Setup
@@ -87,8 +88,8 @@ print(''.center(81, '#'))
 
 z22.apaga_arquivo_sintetico(db_in)
 
-num_arquivos = 5  # quantidade de arquivos
-colunas_arquivos = 2  # quantidade de colunas de saída
+num_arquivos = 3 # quantidade de arquivos
+colunas_arquivos = 20  # quantidade de colunas de saída
 coluna_molecula = 'molecula'
 coluna_alvo = 'IC50'
 frac = 1  # fração do arquivo alvo
@@ -201,7 +202,14 @@ for zarq_i in lista:
 
     #print(zarq_i.split('.')[0],td)
     print('TD:'+str(lista_n_grams))
+    TD=lista_n_grams
+
+    z28.td_similarity_scores(zarq_i,data, TD)
+
     print(''.center(80, '*'))
+
+
+
 
 print('')
 

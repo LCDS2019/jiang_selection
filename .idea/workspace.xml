@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="711605f3-3c17-4404-bd35-c2a6eb9784c8" name="Changes" comment="Version 2.1 - using ngram">
+      <change afterPath="$PROJECT_DIR$/z28_nlp02.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/z21_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/z21_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/z27_ngram.py" beforeDir="false" afterPath="$PROJECT_DIR$/z27_ngram.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z24_measures.py" beforeDir="false" afterPath="$PROJECT_DIR$/z24_measures.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

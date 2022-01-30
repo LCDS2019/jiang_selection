@@ -11,6 +11,8 @@ print(''.ljust(81, '#'))
 import os
 import numpy as np
 import pandas as pd
+import networkx as nx
+import matplotlib.pyplot as plt
 
 from datetime import datetime
 start_time = datetime.now()
@@ -88,7 +90,7 @@ print(''.center(81, '#'))
 
 z22.apaga_arquivo_sintetico(db_in)
 
-num_arquivos = 3 # quantidade de arquivos
+num_arquivos = 10 # quantidade de arquivos
 colunas_arquivos = 20  # quantidade de colunas de saída
 coluna_molecula = 'molecula'
 coluna_alvo = 'IC50'
@@ -156,6 +158,23 @@ except:
     print("Arquivo de descrições não localizado!")
 
 
+print(80 * '-')
+
+graph=nx.Graph()
+graph.add_node('root')
+
+print('')
+for zarq_i in lista:
+    graph.add_edge('root',zarq_i.split('.')[0])
+    print(zarq_i)
+
+plt.clf()
+nx.draw(graph, with_labels=True, node_size=0.5,verticalalignment='bottom')
+plt.savefig('./db_out/graph_datasets.png', dpi=300)
+
+print('')
+print(80 * '-')
+
 for zarq_i in lista:
 
     print(''.center(80, '*'))
@@ -203,6 +222,12 @@ for zarq_i in lista:
     #print(zarq_i.split('.')[0],td)
     print('TD:'+str(lista_n_grams))
     TD=lista_n_grams
+
+
+
+
+
+
 
     z28.td_similarity_scores(zarq_i,data, TD)
 

@@ -5,7 +5,8 @@ from nltk.util import ngrams
 def get_ngrams_01(text):
 
     word_list = text.split()
-    number_of_words = len(word_list)
+    #number_of_words = len(word_list)
+    number_of_words = 3
     #print('Number_of_words: '+str(number_of_words))
     #print(''.center(40, '-'))
 

@@ -3,5 +3,6 @@ site_url: https://example.com/
 
 nav:
     - Home: index.md
+    - Ontologies: ontologies.md
     - About: about.md
 theme: readthedocs

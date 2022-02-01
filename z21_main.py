@@ -13,6 +13,7 @@ import numpy as np
 import pandas as pd
 import networkx as nx
 import matplotlib.pyplot as plt
+from networkx.drawing.nx_pydot import graphviz_layout
 
 from datetime import datetime
 start_time = datetime.now()
@@ -90,14 +91,13 @@ print(''.center(81, '#'))
 
 z22.apaga_arquivo_sintetico(db_in)
 
-num_arquivos = 10 # quantidade de arquivos
-colunas_arquivos = 20  # quantidade de colunas de saída
+num_arquivos = 3 # quantidade de arquivos
+colunas_arquivos = 40  # quantidade de colunas de saída
 coluna_molecula = 'molecula'
 coluna_alvo = 'IC50'
 frac = 1  # fração do arquivo alvo
 frac_aleatorio = 0 # 1-sim / 0-não - permite # diferente de linhas nos arquivos
-repetition = 2 #1 - diferentes # de colunas / 2 - iguais # de colunas
-
+repetition = 1 #1 - diferentes # de colunas / 2 - iguais # de colunas
 
 z22.arquivos_sinteticos(db_in,repetition,num_arquivos,df_feature,colunas_arquivos,frac,frac_aleatorio)
 
@@ -180,7 +180,6 @@ for zarq_i in lista:
     print(''.center(80, '*'))
     print('Arquivo zarq: '+zarq_i)
 
-
     zarq = pd.read_csv(db_in+zarq_i, sep='|')
 
     l=[]
@@ -224,16 +223,23 @@ for zarq_i in lista:
     TD=lista_n_grams
 
 
-    z28.td_similarity_scores(zarq_i,data, TD)
+    vlist=z28.td_similarity_scores(zarq_i,data, TD)
 
+    for i in vlist:
+        print(i)
+        #print(i[0])
+        #print(i[1])
+        #print(i[2])
 
-
-
+        graph.add_weighted_edges_from([(i[0], i[1], i[2])])
 
     print(''.center(80, '*'))
 
 
 
+pos = graphviz_layout(graph, prog="dot")
+nx.draw(graph, pos,with_labels=True)
+plt.show()
 
 print('')
 

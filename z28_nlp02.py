@@ -43,16 +43,15 @@ def td_similarity_scores(zarq_i,data, TD):
             #print(j)
 
             try:
-                #print(i,'************************',j)
-                z24.sim_spath2(zarq_i,data,i,j)
+                print(i,'************************',j)
+                u=z24.sim_spath2(zarq_i,data,i,j)
 
-                #ulist.append((zarq_i,j,u))
-                #similarity_graph.add_weighted_edges_from([(zarq_i,j,u)])
-                #print((zarq_i,j,u))
+                ulist.append(u)
+
             except:
                 'n/a'
 
-    #return ([zarq_i, j, u])
+    return(ulist)
 
 
 

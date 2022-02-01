@@ -84,7 +84,7 @@ CYP2D6 inhibitor|Interaction with cytochrome P450 (CYP) isoform 2D6.
 CYP2C9 inhibitor|Interaction with cytochrome P450 (CYP) isoform C9.
 P-gp substrate|P-glycoprotein substrate: SVM model built with 1033 molecules in training and 415 molecules in testing (10-fold CV: ACC = 0.72, AUC = 0.77; External: ACC = 0.88, AUC = 0.94).
 CYP3A4 inhibitor|Interaction with cytochrome P450 (CYP) isoform 3A4.
-hydrogen_bond_don0rs_count (using_Lipinski’s_definition)|Number of donor carbons.
+Hydrogen bond don0rs count (using Lipinski’s definition)|Number of donor carbons.
 Synthetic Accessibility|Synthetic Accessibility, we've built our own piecemeal method, analyzing more than 13 million compounds immediately delivered by suppliers.
 Log Po/w iLOGP|Partition coefficient between n-octanol and water, based on free energies of solvation in n-octanol and water calculated by the Generalized-Born model and solvent accessible surface area.
 Fraction Csp3|sp3 carbon fraction.
@@ -96,13 +96,13 @@ TPSA_y|Topological polar surface area.
 Log Po/w MLOGP|Partition coefficient between n-octanol and water calculated by an archetype of topological method based on a linear relationship with 13 molecular descriptors implemented by Moriguchi, I, et al.
 Leadlikeness|Since it is crucial for a chemist to judge whether a particular molecule is suitable to initiate lead optimization, in addition to structural filters, we implemented a rule-based method for lead similarity, which was adapted from Teague et al.
 Brenk|Structural Alert, which consists of a list of 105 fragments identified by Brenk et al.5 as supposedly toxic, chemically reactive, metabolically unstable – or having properties responsible for poor pharmacokinetics.
-molar_refractivity|Molar refractivity.
+Molar refractivity|Molar refractivity.
 Veber filter|Lipinski filter (rule of 5) adapted by Veber et al. Rotatable links < (or equal to) 10; TPSA < (or equal to) 140.
 Class [Log S (SILICOS-IT)]|Solubility rating (insoluble < -10 < sparingly soluble < -6 < moderately < -4 < soluble < -2 very soluble < 0 < highly soluble) from Log S (SILICOS-IT).
 Num. of Rotatable bonds|Number of rotational bonds.
 Log S (Ali)|Decimal logarithm of molar solubility in water calculated by Ali model.
-heavy_atom_count|Number of heavy atoms.
-hydrogen_bond_acceptors_count (using_Lipinski’s_definition)|Number of acceptor carbons.
+Heavy atom count|Number of heavy atoms.
+Hydrogen bond acceptors count (using Lipinski’s definition)|Number of acceptor carbons.
 Log Kp (cm/s)|Skin penetration: QSPR model implemented by Potts et al.
 Molecular Mass|Molecular Mass
 Egan filter|Lipinski filter (rule of 5) adapted by Egan et al. WLOGP < (or equal to) 5.88; TPSA < (or equal) 131.6.
@@ -119,7 +119,7 @@ PAINS|Indicator of interference compounds (hitters or promiscuous) that have a f
 Lipinski|Lipinski filter (rule of 5) (Pfizer) implemented by Lipinski et al. MW < (or equal) to 500; MLOGP < (or equal to) 4.15; N or O < (or equal to) 10; NH or OH < (or equal to) 5.
 Solubility [Log S (SILICOS-IT)] (mol/l)|Molar solubility in water calculated by the SILICOS-IT model in mol/l.
 Solubility [Log S (SILICOS-IT)] (mg/ml)|Molar solubility in water calculated by the SILICOS-IT model in mg/ml.
-Lowest_Unoccupied_Molecular_Orbital_Energy|LUMO (lowest unoccupied molecular orbital) orbital energy.
+Lowest Unoccupied Molecular Orbital Energy|LUMO (lowest unoccupied molecular orbital) orbital energy.
 Absorption Energy (max. Transition) (eV)|Maximum Absorption Wavelength in eV.
 log P|Log P (the log of the octanol-water partition coefficient), an indicator of hydrophobicity, using a HyperChem implementation of an atom fragment method developed by Ghose, Pritchett, and Crippen.
 Absorption Energy (HOMO-LUMO transition) (eV)|Absorption Wavelength of the HOMO – LUMO transition (HOMO = highest occupied molecular orbital; LUMO = lowest unoccupied molecular orbital) in eV.

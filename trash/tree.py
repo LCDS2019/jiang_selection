@@ -13,6 +13,7 @@ import matplotlib.pyplot as plt
 import networkx as nx
 from networkx.drawing.nx_pydot import graphviz_layout
 
+
 g = nx.DiGraph()
 g.add_edges_from([(1, 2), (1, 3), (1, 4), (2, 5) ])
 

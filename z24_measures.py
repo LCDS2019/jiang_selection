@@ -1,4 +1,5 @@
 import networkx as nx
+
 ###################################################################
 # Medida de similaridade Spath
 
@@ -13,10 +14,9 @@ def sim_spath(G,i,j):
         except:
             res=0
 
-    return("{:.2f}".format(float(res)))
+    u="{:.2f}".format(float(res))
+    return(u)
     #return(res)
-
-
 
 def sim_spath2(zarq_i,G,i,j):
 
@@ -29,4 +29,8 @@ def sim_spath2(zarq_i,G,i,j):
         except:
             res=0
         if res >0:
-            print(zarq_i.split('.')[0],'***', i, '***', j, '***',"{:.2f}".format(float(res)))
+            u=[zarq_i.split('.')[0], i, j,"{:.2f}".format(float(res))]
+            print(u[0],u[1],u[2],u[3])
+            u=[u[0],u[2],u[3]]
+
+    return (u)

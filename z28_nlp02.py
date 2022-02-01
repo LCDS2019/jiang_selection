@@ -53,3 +53,7 @@ def td_similarity_scores(zarq_i,data, TD):
                 'n/a'
 
     #return ([zarq_i, j, u])
+
+
+
+

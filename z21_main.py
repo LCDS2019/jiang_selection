@@ -224,12 +224,11 @@ for zarq_i in lista:
     TD=lista_n_grams
 
 
-
-
-
-
-
     z28.td_similarity_scores(zarq_i,data, TD)
+
+
+
+
 
     print(''.center(80, '*'))
 

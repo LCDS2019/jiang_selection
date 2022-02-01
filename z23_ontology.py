@@ -6,6 +6,7 @@ import networkx as nx
 import pandas as pd
 import matplotlib.pyplot as plt
 import pickle
+import pydot
 
 def load_ontology(db_system,onto_path,ontologia):
     print('')
@@ -63,6 +64,8 @@ def create_ontology(ontologia,onto_path):
     plt.clf()
     nx.draw(G, with_labels=False, node_size=1,verticalalignment='bottom')
     plt.savefig('./db_out/G_ontologia.png', dpi=300)
+
+################################################################################
 
     #print(nx.shortest_path(G, source='Algorithm', target='tumor_size'))
 

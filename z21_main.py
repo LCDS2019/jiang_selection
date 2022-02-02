@@ -91,8 +91,8 @@ print(''.center(81, '#'))
 
 z22.apaga_arquivo_sintetico(db_in)
 
-num_arquivos = 3 # quantidade de arquivos
-colunas_arquivos = 40  # quantidade de colunas de saída
+num_arquivos = 5 # quantidade de arquivos
+colunas_arquivos = 20  # quantidade de colunas de saída
 coluna_molecula = 'molecula'
 coluna_alvo = 'IC50'
 frac = 1  # fração do arquivo alvo

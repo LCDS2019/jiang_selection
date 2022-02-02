@@ -6,7 +6,7 @@ def get_ngrams_01(text):
 
     word_list = text.split()
     #number_of_words = len(word_list)
-    number_of_words = 5
+    number_of_words = 2
     #print('Number_of_words: '+str(number_of_words))
     #print(''.center(40, '-'))
 
@@ -21,7 +21,6 @@ def get_ngrams_01(text):
     #print('')
 
     return list_ngrams
-
 
 def get_ngrams_02(text, n ):
     n_grams = ngrams(word_tokenize(text), n)

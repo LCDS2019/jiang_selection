@@ -46,7 +46,7 @@ def create_ontology(ontologia,onto_path):
     # Apresentação das classes
     classes = list(onto.classes())
 
-    #print(classes)
+    print(classes)
 
     x = []
     s=0
@@ -56,8 +56,13 @@ def create_ontology(ontologia,onto_path):
         for l in i.is_a:
             u=u+1
             b=str(l).split('.')[-1]
-            print(u,s,i.name,'---------',b)
-            G.add_edge(b,i.name)
+            b=b.replace('_',' ').lower()
+
+            i = i.name
+            i = i.replace('_', ' ').lower()
+
+            #print(u,s,i,'---------',b)
+            G.add_edge(b,i)
 
     #print([e for e in G.edges])
 

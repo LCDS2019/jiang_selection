@@ -30,7 +30,7 @@ def sim_spath2(zarq_i,G,i,j):
             res=0
         if res >0:
             u=[zarq_i.split('.')[0], i, j,"{:.2f}".format(float(res))]
-            print(u[0],'|',u[1],'|',u[2],u[3])
+            print(u[0],'|',u[1],'|',u[2],'|',u[3])
             u=[u[0],u[2],u[3]]
 
     return (u)

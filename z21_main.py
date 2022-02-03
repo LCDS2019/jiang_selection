@@ -91,13 +91,13 @@ print(''.center(81, '#'))
 
 z22.apaga_arquivo_sintetico(db_in)
 
-num_arquivos = 10 # quantidade de arquivos
+num_arquivos = 2 # quantidade de arquivos
 colunas_arquivos = 30  # quantidade de colunas de saída
 coluna_molecula = 'molecula'
 coluna_alvo = 'IC50'
 frac = 1  # fração do arquivo alvo
 frac_aleatorio = 0 # 1-sim / 0-não - permite # diferente de linhas nos arquivos
-repetition = 1 #1 - diferentes # de colunas / 2 - iguais # de colunas
+repetition = 2 #1 - diferentes # de colunas / 2 - iguais # de colunas
 
 z22.arquivos_sinteticos(db_in,repetition,num_arquivos,df_feature,colunas_arquivos,frac,frac_aleatorio)
 

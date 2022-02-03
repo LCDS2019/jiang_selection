@@ -40,6 +40,7 @@ def td_similarity_scores(zarq_i,data, TD):
 
         for j in data.nodes():
             j=str(j).replace('_', '')
+            #print(i)
             #print(j)
 
             try:

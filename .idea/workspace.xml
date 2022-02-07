@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="711605f3-3c17-4404-bd35-c2a6eb9784c8" name="Changes" comment="Version 2.1 - using ngram &gt; 1">
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_2_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_3_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_4_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_5_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_6_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_7_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_8_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_9_repetition_1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_in/RReliefF_features.csv" beforeDir="false" afterPath="$PROJECT_DIR$/db_in/RReliefF_features.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_in/zarq_0_repetition_2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_in/zarq_1_repetition_2.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/db_out/graph_datasets.png" beforeDir="false" afterPath="$PROJECT_DIR$/db_out/graph_datasets.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_system/OntoQSAR_rdf_ccsm.csv" beforeDir="false" afterPath="$PROJECT_DIR$/db_system/OntoQSAR_rdf_ccsm.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_system/OntoQSAR_rdf_ccsm_concepts.csv" beforeDir="false" afterPath="$PROJECT_DIR$/db_system/OntoQSAR_rdf_ccsm_concepts.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/z21_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/z21_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z24_measures.py" beforeDir="false" afterPath="$PROJECT_DIR$/z24_measures.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/z28_nlp02.py" beforeDir="false" afterPath="$PROJECT_DIR$/z28_nlp02.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,11 +42,15 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="248Jn1MOwpmZs50QOZVjR89S4nE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ChangesTree.GroupingKeys" value="" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/js_docs/docs" />

@@ -37,20 +37,19 @@ def td_similarity_scores(zarq_i,data, TD):
     #print(zarq_i)
 
     for i in TD:
-
         for j in data.nodes():
+
             j=str(j).replace('_', '')
-            #print(i)
-            #print(j)
 
             try:
-                #print(i,'************************',j)
+
                 u=z24.sim_spath2(zarq_i,data,i,j)
 
                 ulist.append(u)
 
             except:
                 'n/a'
+
 
     return(ulist)
 

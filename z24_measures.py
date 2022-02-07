@@ -14,23 +14,22 @@ def sim_spath(G,i,j):
         except:
             res=0
 
-    u="{:.2f}".format(float(res))
-    return(u)
-    #return(res)
+    return(res)
 
-def sim_spath2(zarq_i,G,i,j):
 
-    if i == j:
-        res = 1.0
+def sim_spath2(vetor,l, zarq_i, G, i, j):
+    res=sim_spath(G, i, j)
 
-    else:
-        try:
-            res=1/nx.shortest_path_length(G,i,j.lower())
-        except:
-            res=0
-        if res >0:
-            u=[zarq_i.split('.')[0], i, j,"{:.2f}".format(float(res))]
-            print(u[0],'|',u[1],'|',u[2],'|',u[3])
-            u=[u[0],u[2],u[3]]
+    if res >0:
+        u=[zarq_i.split('.')[0], i, j,"{:.2f}".format(float(res))]
+        #print(l,'|',u[0],'|',u[2],'|',u[1],'|',u[3])
+        u=[u[0],u[2],u[3]]
+        vetor.append(u[2])
 
-    return (u)
+
+        return (vetor)
+
+
+
+
+

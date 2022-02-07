@@ -91,13 +91,13 @@ print(''.center(81, '#'))
 
 z22.apaga_arquivo_sintetico(db_in)
 
-num_arquivos = 2 # quantidade de arquivos
-colunas_arquivos = 30  # quantidade de colunas de saída
+num_arquivos = 5 # quantidade de arquivos
+colunas_arquivos = 150  # quantidade de colunas de saída
 coluna_molecula = 'molecula'
 coluna_alvo = 'IC50'
 frac = 1  # fração do arquivo alvo
 frac_aleatorio = 0 # 1-sim / 0-não - permite # diferente de linhas nos arquivos
-repetition = 2 #1 - diferentes # de colunas / 2 - iguais # de colunas
+repetition = 1 #1 - diferentes # de colunas / 2 - iguais # de colunas
 
 z22.arquivos_sinteticos(db_in,repetition,num_arquivos,df_feature,colunas_arquivos,frac,frac_aleatorio)
 
@@ -219,23 +219,57 @@ for zarq_i in lista:
         #print(''.center(40, '*'))
 
     #print(zarq_i.split('.')[0],td)
-    print('TD:'+str(lista_n_grams))
-    TD=lista_n_grams
+
+    TD = lista_n_grams
+    TD = set(TD)
+    TD = list(TD)
+    print('TD: '+str(TD))
 
 
-    vlist=z28.td_similarity_scores(zarq_i,data, TD)
+    vetores_lista=[]
+    ulist = []
 
-    for i in vlist:
+    for j in TD:
+        l = 0
+        vetor=[]
+        for i in data.nodes():
+            u=z24.sim_spath2(vetor,l, zarq_i, data, i, j)
+
+            l=l+1
+
+        if len(vetor)>0:
+            vetor = [float(item) for item in vetor]
+
+            #print(str(j)+': '+str(vetor))
+            vetores_lista.append([j,vetor])
+
+            vetor_mean=np.mean(vetor)
+
+            ulist.append([zarq_i,j,vetor_mean])
+    #print('**************************')
+
+    print('')
+
+    for i in vetores_lista:
         print(i)
+
+    #ulist = z28.td_similarity_scores(zarq_i, data, TD)
+
+    print('')
+
+    for i in data.nodes():
+        print(zarq_i,'|',i,'|',"{:.2f}".format(float(0)))
+
+    print('')
+    for i in ulist:
+        print(i[0].split('.')[0],'|',i[1],'|',"{:.2f}".format(float(i[2])))
         #print(i[0])
         #print(i[1])
         #print(i[2])
 
-        graph.add_weighted_edges_from([(i[0], i[1], i[2])])
+        graph.add_weighted_edges_from([(i[0].split('.')[0],i[1],i[2])])
 
     print(''.center(80, '*'))
-
-
 
 pos = graphviz_layout(graph, prog="dot")
 nx.draw(graph, pos,with_labels=True)

@@ -1,0 +1,157 @@
+Index: z21_main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>##########################################################################################\nprint(''.ljust(81, '#'))\nprint('# PPGSI - USP/EACH 2022')\nprint('# Jiang_Selection')\nprint('# Version 2.0')\nprint('# Author: lcds2019')\nprint(''.ljust(81, '#'))\n\n##########################################################################################\n# libraries and modules\nimport os\nimport numpy as np\nimport pandas as pd\nimport networkx as nx\nimport matplotlib.pyplot as plt\nfrom networkx.drawing.nx_pydot import graphviz_layout\n\nfrom datetime import datetime\nstart_time = datetime.now()\n\nimport z22_functions as z22\nimport z23_ontology as z23\nimport z24_measures as z24\nimport z25_ccsm as z25\nimport z26_nlp01 as z26\nimport z27_ngram as z27\nimport z28_nlp02 as z28\n\n##########################################################################################\n#Setup\n\nonto_path = './ontology/'\ndb_in = './db_in/'\ndb_out = './db_out/'\ndb_system = './db_system/'\n\nprint('')\n\n##########################################################################################\nprint(''.center(81, '#'))\nprint('#'+' Seleção de ontologias '.center(80, '#'))\nprint(''.center(81, '#'))\n\n#print('onto_path: '+ str(onto_path))\n\nontologia=z22.create_ontology_menu(onto_path)\n\nprint('')\n\n##########################################################################################\nprint(''.center(81, '#'))\nprint('#'+' Criação do Grafo de conceitos '.center(80, '#'))\nprint(''.center(81, '#'))\n\n#print('')\n#print('Dir: '+onto_path)\n#print('Ontologia selecionada: '+ontologia)\n\ndata,nodes=z23.load_ontology(db_system,onto_path,ontologia)\n\nprint('')\n\n##########################################################################################\nprint(''.center(81, '#'))\nprint('#'+' Seleção de arquivo disponíveis '.center(80, '#'))\nprint(''.center(81, '#'))\n\nprint('')\nprint('Dir: '+db_in)\ndados=z22.arquivos_disponiveis(db_in)\n#df_feature, df_description,filename_feature,filename_description\n\ndf_feature=dados[0]\nprint(df_feature.head(3))\n\ndf_description=dados[1]\nprint(df_description.head(3))\n\nfilename_feature=dados[2]\n#print(filename_feature)\n\nfilename_description=dados[3]\n#print(filename_description)\n\nprint('')\n\n##########################################################################################\nprint(''.center(81, '#'))\nprint('#'+' Criação de arquivos sintéticos '.center(80, '#'))\nprint(''.center(81, '#'))\n\nz22.apaga_arquivo_sintetico(db_in)\n\nnum_arquivos = 2 # quantidade de arquivos\ncolunas_arquivos = 30  # quantidade de colunas de saída\ncoluna_molecula = 'molecula'\ncoluna_alvo = 'IC50'\nfrac = 1  # fração do arquivo alvo\nfrac_aleatorio = 0 # 1-sim / 0-não - permite # diferente de linhas nos arquivos\nrepetition = 2 #1 - diferentes # de colunas / 2 - iguais # de colunas\n\nz22.arquivos_sinteticos(db_in,repetition,num_arquivos,df_feature,colunas_arquivos,frac,frac_aleatorio)\n\nprint('')\n\n##########################################################################################\nprint(''.center(81, '#'))\nprint('#'+' Medidas de similiaridade em processamento '.center(80, '#'))\nprint(''.center(81, '#'))\n\nprint('')\nprint('* - '+'sim_spath')\n\nz25.ccsm(data,nodes,db_system,ontologia)\n\nprint('')\n\n##########################################################################################\nprint(''.center(81, '#'))\nprint('#'+' NLP - Algoritmo 01 '.center(80, '#'))\nprint(' NLP ”extract terms through NLP” & ”compute similarity score” '.center(81, '#'))\nprint(''.center(81, '#'))\n\npath_descriptions = str(filename_description)\n\nprint(''.center(80, '-'))\nprint(' Datasets disponíveis para seleção '.center(80, '-'))\nprint(' path_descriptions '.center(80, '-'))\nprint(''.center(80, '-'))\nprint('')\n\nprint(path_descriptions)\n\n#####################################################\nprint(80 * '-')\n\nprint('Stopwords:')\nenglish_stops=z26.english_stops()\n\nprint('Punctuations:')\npunctuations=z26.punctuations()\n\nprint(80 * '-')\n#####################################################\n\npath = db_in\narr = os.listdir(path)\n\nlista = [arq for arq in arr if (arq.startswith(\"zarq_\"))]\nlista.sort(reverse=False)\n\nprint('')\n\ntry:\n    descriptions = pd.read_csv(path_descriptions, sep='|')\n    print(\"Arquivo de descrições localizado!\")\nexcept:\n    print(\"Arquivo de descrições não localizado!\")\n\n\nprint(80 * '-')\n\ngraph=nx.Graph()\ngraph.add_node('root')\n\nprint('')\nfor zarq_i in lista:\n    graph.add_edge('root',zarq_i.split('.')[0])\n    print(zarq_i)\n\nplt.clf()\nnx.draw(graph, with_labels=True, node_size=0.5,verticalalignment='bottom')\nplt.savefig('./db_out/graph_datasets.png', dpi=300)\n\nprint('')\nprint(80 * '-')\n\nfor zarq_i in lista:\n\n    print(''.center(80, '*'))\n    print('Arquivo zarq: '+zarq_i)\n\n    zarq = pd.read_csv(db_in+zarq_i, sep='|')\n\n    l=[]\n    for i in zarq.columns:\n        l.append(i)\n\n    df = pd.DataFrame(l, columns=['Atribute'])\n\n    dfl=pd.merge(df, descriptions, on=['Atribute'], how='left')\n    #print(dfl)\n\n    M = []\n    lista_n_grams = []\n\n    for index, row in dfl.iterrows() :\n        #print(''.center(40, '*'))\n        atributo=str(row[0])\n        #print('Atributo: '+ str(atributo))\n\n        row=str(row[1])\n        #print('Descrição: '+str(row))\n\n        # ngram ****************************************************************\n        # n = 5\n\n        td_gram=z27.get_ngrams_01(row)\n\n        td = z26.tokenize_descriptions(index, atributo, row, english_stops, punctuations)\n        #print('Td: '+str(td))\n\n        for i in td:\n            lista_n_grams.append(i)\n\n        for i in td_gram:\n            lista_n_grams.append(i)\n\n        #print(''.center(40, '*'))\n\n    #print(zarq_i.split('.')[0],td)\n    print('TD:'+str(lista_n_grams))\n    TD=lista_n_grams\n\n\n    vlist=z28.td_similarity_scores(zarq_i,data, TD)\n\n    for i in vlist:\n        print(i)\n        #print(i[0])\n        #print(i[1])\n        #print(i[2])\n\n        graph.add_weighted_edges_from([(i[0], i[1], i[2])])\n\n    print(''.center(80, '*'))\n\n\n\npos = graphviz_layout(graph, prog=\"dot\")\nnx.draw(graph, pos,with_labels=True)\nplt.show()\n\nprint('')\n\nprint(''.ljust(81, '#'))\n\nprint('')\n'''\n##########################################################################################\nprint(''.ljust(81, '#'))\nprint('#'+' NLP - Algoritmo 02 '.ljust(80, '#'))\nprint(''.ljust(81, '#'))\n\nprint('')\n\n##########################################################################################\nprint(''.ljust(81, '#'))\nprint('#'+' NLP - Algoritmo 03 '.ljust(80, '#'))\nprint(''.ljust(81, '#'))\n\nprint('')\n\n##########################################################################################\nprint(''.ljust(81, '#'))\nprint('#'+' Apresentação do ranking '.ljust(80, '#'))\nprint(''.ljust(81, '#'))\n\nprint('')\n\n##########################################################################################\nprint(''.ljust(81, '#'))\nprint('#'+' Registro de estatísticas '.ljust(80, '#'))\nprint(''.ljust(81, '#'))\n\n\n\nprint('')\n'''\n##########################################################################################\nprint(''.ljust(81, '-'))\n\nend_time = datetime.now()\nprint('Duration: {}'.format(end_time - start_time))\n\nprint('#'+' End '.center(80, '#'))\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/z21_main.py b/z21_main.py
+--- a/z21_main.py	(revision 6b24e31a3ebbb010d7677155bb623e1b0ae93ab2)
++++ b/z21_main.py	(date 1643943560494)
+@@ -223,20 +223,20 @@
+     TD=lista_n_grams
+ 
+ 
+-    vlist=z28.td_similarity_scores(zarq_i,data, TD)
++    #ulist=z28.td_similarity_scores(zarq_i,data, TD)
++    ulist=z28.td_similarity_scores(zarq_i,data, TD)
++
+ 
+-    for i in vlist:
+-        print(i)
++
++    for i in ulist:
++        #print(i)
+         #print(i[0])
+         #print(i[1])
+-        #print(i[2])
+ 
+         graph.add_weighted_edges_from([(i[0], i[1], i[2])])
+ 
+     print(''.center(80, '*'))
+ 
+-
+-
+ pos = graphviz_layout(graph, prog="dot")
+ nx.draw(graph, pos,with_labels=True)
+ plt.show()
+Index: z24_measures.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import networkx as nx\n\n###################################################################\n# Medida de similaridade Spath\n\ndef sim_spath(G,i,j):\n\n    if i == j:\n        res = 1.0\n\n    else:\n        try:\n            res=1/nx.shortest_path_length(G,i,j)\n        except:\n            res=0\n\n    u=\"{:.2f}\".format(float(res))\n    return(u)\n    #return(res)\n\ndef sim_spath2(zarq_i,G,i,j):\n\n    if i == j:\n        res = 1.0\n\n    else:\n        try:\n            res=1/nx.shortest_path_length(G,i,j.lower())\n        except:\n            res=0\n        if res >0:\n            u=[zarq_i.split('.')[0], i, j,\"{:.2f}\".format(float(res))]\n            print(u[0],'|',u[1],'|',u[2],'|',u[3])\n            u=[u[0],u[2],u[3]]\n\n    return (u)\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/z24_measures.py b/z24_measures.py
+--- a/z24_measures.py	(revision 6b24e31a3ebbb010d7677155bb623e1b0ae93ab2)
++++ b/z24_measures.py	(date 1643941915509)
+@@ -18,7 +18,7 @@
+     return(u)
+     #return(res)
+ 
+-def sim_spath2(zarq_i,G,i,j):
++def sim_spath2(l,zarq_i,G,i,j):
+ 
+     if i == j:
+         res = 1.0
+@@ -29,8 +29,10 @@
+         except:
+             res=0
+         if res >0:
++
+             u=[zarq_i.split('.')[0], i, j,"{:.2f}".format(float(res))]
+-            print(u[0],'|',u[1],'|',u[2],'|',u[3])
++            print(l,'|',u[0],'|',u[1],'|',u[2],'|',u[3])
+             u=[u[0],u[2],u[3]]
+ 
++
+     return (u)
+Index: z28_nlp02.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>##########################################################################################\n#Algorithm 2 - Pseudo code for ”compute similarity score”\n##########################################################################################\n'''\nfor each term T_d extracted from dataset D_t do\n    Compute the lexical similarity scores Sim_t of T_d and the\n    labels of concepts C_l in the ontology using Wu and Palmer algorithm\n    Build the similarity graph (D_t , C_l , Sim_t)\n    CDSV[D_t][C_l]=Sim_t\nend for\n\nlet D_i =dataset, C_j =concept, S ij=similarity score for C_j\nand D_i , CCSM[C_t][C_j]=similarity score of concepts C_t and C_j\n\nfor each (D_i , C_j , S_ij) in the similarity graph do\n    for each concept C_c in the ontology do\n        similarity score = CCSM[C_c][C_j]*S_ij\n        CDSV[D_i ][C_c ]=max(similarity score, CDSV[D_i][C_c])\n    end for\nend for\n'''\n##########################################################################################\nimport z28_nlp02 as z28\nimport z24_measures as z24\nimport networkx as nx\nimport matplotlib.pyplot as plt\nimport pandas as pd\nimport numpy as np\n\ndef td_similarity_scores(zarq_i,data, TD):\n\n    similarity_graph= nx.Graph()\n\n    ulist=[]\n\n    #print(TD)\n    #print(zarq_i)\n\n    for i in TD:\n\n        for j in data.nodes():\n            j=str(j).replace('_', '')\n            #print(i)\n            #print(j)\n\n            try:\n                #print(i,'************************',j)\n                u=z24.sim_spath2(zarq_i,data,i,j)\n\n                ulist.append(u)\n\n            except:\n                'n/a'\n\n    return(ulist)\n\n\n\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/z28_nlp02.py b/z28_nlp02.py
+--- a/z28_nlp02.py	(revision 6b24e31a3ebbb010d7677155bb623e1b0ae93ab2)
++++ b/z28_nlp02.py	(date 1643942010675)
+@@ -29,6 +29,7 @@
+ 
+ def td_similarity_scores(zarq_i,data, TD):
+ 
++
+     similarity_graph= nx.Graph()
+ 
+     ulist=[]
+@@ -38,6 +39,8 @@
+ 
+     for i in TD:
+ 
++        l=0
++
+         for j in data.nodes():
+             j=str(j).replace('_', '')
+             #print(i)
+@@ -45,13 +48,15 @@
+ 
+             try:
+                 #print(i,'************************',j)
+-                u=z24.sim_spath2(zarq_i,data,i,j)
++                u=z24.sim_spath2(l,zarq_i,data,i,j)
+ 
+                 ulist.append(u)
+ 
+             except:
+                 'n/a'
+ 
++            l=l+1
++
+     return(ulist)
+ 
+ 
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"711605f3-3c17-4404-bd35-c2a6eb9784c8\" name=\"Changes\" comment=\"Version 2.1 - using ngram &gt; 1\">\n      <change beforePath=\"$PROJECT_DIR$/db_in/zarq_2_repetition_1.csv\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/db_in/zarq_3_repetition_1.csv\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/db_in/zarq_4_repetition_1.csv\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/db_in/zarq_5_repetition_1.csv\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/db_in/zarq_6_repetition_1.csv\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/db_in/zarq_7_repetition_1.csv\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/db_in/zarq_8_repetition_1.csv\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/db_in/zarq_9_repetition_1.csv\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/db_out/graph_datasets.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/db_out/graph_datasets.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/z21_main.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/z21_main.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/z28_nlp02.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/z28_nlp02.py\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Python Script\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"PUSH_AUTO_UPDATE\" value=\"true\" />\n    <option name=\"PUSH_TAGS\">\n      <GitPushTagMode>\n        <option name=\"argument\" value=\"--tags\" />\n        <option name=\"title\" value=\"All\" />\n      </GitPushTagMode>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"248Jn1MOwpmZs50QOZVjR89S4nE\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/js_docs/docs\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/js_docs/docs\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/old\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"Python.z21_main\">\n    <configuration name=\"mp3\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"mp3\" />\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/../mp3\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/../mp3/mp3.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\n      <option name=\"MODULE_MODE\" value=\"false\" />\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\n      <option name=\"INPUT_FILE\" value=\"\" />\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"tree\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"jiang_selection\" />\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/trash\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/trash/tree.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\n      <option name=\"MODULE_MODE\" value=\"false\" />\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\n      <option name=\"INPUT_FILE\" value=\"\" />\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"z01_main\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"prog\" />\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/../prog\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/../prog/z01_main.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\n      <option name=\"MODULE_MODE\" value=\"false\" />\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\n      <option name=\"INPUT_FILE\" value=\"\" />\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"z21_main\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"jiang_selection\" />\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/z21_main.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\n      <option name=\"MODULE_MODE\" value=\"false\" />\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\n      <option name=\"INPUT_FILE\" value=\"\" />\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"z23_ontology\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"jiang_selection\" />\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/z23_ontology.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\n      <option name=\"MODULE_MODE\" value=\"false\" />\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\n      <option name=\"INPUT_FILE\" value=\"\" />\n      <method v=\"2\" />\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Python.z21_main\" />\n        <item itemvalue=\"Python.z23_ontology\" />\n        <item itemvalue=\"Python.tree\" />\n        <item itemvalue=\"Python.z01_main\" />\n        <item itemvalue=\"Python.mp3\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"711605f3-3c17-4404-bd35-c2a6eb9784c8\" name=\"Changes\" comment=\"\" />\n      <created>1643006444500</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1643006444500</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Version 2.1\">\n      <created>1643077759831</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1643077759831</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Version 2.1 - tokenize\">\n      <created>1643143206790</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1643143206790</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"Version 2.1 - using ngram\">\n      <created>1643171855407</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1643171855407</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"Version 2.1 - using ngram Len 3\">\n      <created>1643577036544</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1643577036544</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"Version 2.1 - using ngram Len 3\">\n      <created>1643676310332</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1643676310332</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"Version 2.1 - using ngram Len 3\">\n      <created>1643676356705</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1643676356705</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"Version 2.1 - using ngram Len 5\">\n      <created>1643684670430</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1643684670430</updated>\n    </task>\n    <task id=\"LOCAL-00008\" summary=\"Version 2.1 - using ngram &gt; 1\">\n      <created>1643819230310</created>\n      <option name=\"number\" value=\"00008\" />\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1643819230310</updated>\n    </task>\n    <task id=\"LOCAL-00009\" summary=\"Version 2.1 - using ngram &gt; 1\">\n      <created>1643819252388</created>\n      <option name=\"number\" value=\"00009\" />\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1643819252388</updated>\n    </task>\n    <task id=\"LOCAL-00010\" summary=\"Version 2.1 - using ngram &gt; 1\">\n      <created>1643819416481</created>\n      <option name=\"number\" value=\"00010\" />\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1643819416481</updated>\n    </task>\n    <task id=\"LOCAL-00011\" summary=\"Version 2.1 - using ngram &gt; 1\">\n      <created>1643819450188</created>\n      <option name=\"number\" value=\"00011\" />\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1643819450188</updated>\n    </task>\n    <task id=\"LOCAL-00012\" summary=\"Version 2.1 - using ngram &gt; 1\">\n      <created>1643848427257</created>\n      <option name=\"number\" value=\"00012\" />\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1643848427257</updated>\n    </task>\n    <task id=\"LOCAL-00013\" summary=\"Version 2.1 - using ngram &gt; 1\">\n      <created>1643853298784</created>\n      <option name=\"number\" value=\"00013\" />\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1643853298784</updated>\n    </task>\n    <task id=\"LOCAL-00014\" summary=\"Version 2.1 - using ngram &gt; n\">\n      <created>1643853526112</created>\n      <option name=\"number\" value=\"00014\" />\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1643853526112</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"15\" />\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Version 2.1\" />\n    <MESSAGE value=\"Version 2.1 - tokenize\" />\n    <MESSAGE value=\"Version 2.1 - using ngram\" />\n    <MESSAGE value=\"Version 2.1 - using ngram Len 3\" />\n    <MESSAGE value=\"Version 2.1 - using ngram Len 5\" />\n    <MESSAGE value=\"Version 2.1 - using ngram &gt; 1\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Version 2.1 - using ngram &gt; 1\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 6b24e31a3ebbb010d7677155bb623e1b0ae93ab2)
++++ b/.idea/workspace.xml	(date 1643943561038)
+@@ -5,16 +5,9 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="711605f3-3c17-4404-bd35-c2a6eb9784c8" name="Changes" comment="Version 2.1 - using ngram &gt; 1">
+-      <change beforePath="$PROJECT_DIR$/db_in/zarq_2_repetition_1.csv" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/db_in/zarq_3_repetition_1.csv" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/db_in/zarq_4_repetition_1.csv" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/db_in/zarq_5_repetition_1.csv" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/db_in/zarq_6_repetition_1.csv" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/db_in/zarq_7_repetition_1.csv" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/db_in/zarq_8_repetition_1.csv" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/db_in/zarq_9_repetition_1.csv" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/db_out/graph_datasets.png" beforeDir="false" afterPath="$PROJECT_DIR$/db_out/graph_datasets.png" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/z21_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/z21_main.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/z24_measures.py" beforeDir="false" afterPath="$PROJECT_DIR$/z24_measures.py" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/z28_nlp02.py" beforeDir="false" afterPath="$PROJECT_DIR$/z28_nlp02.py" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -43,11 +36,15 @@
+     <option name="stateVersion" value="1" />
+   </component>
+   <component name="ProjectId" id="248Jn1MOwpmZs50QOZVjR89S4nE" />
++  <component name="ProjectLevelVcsManager">
++    <ConfirmationsSetting value="2" id="Add" />
++  </component>
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+   <component name="PropertiesComponent">
++    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+     <property name="last_opened_file_path" value="$PROJECT_DIR$/js_docs/docs" />

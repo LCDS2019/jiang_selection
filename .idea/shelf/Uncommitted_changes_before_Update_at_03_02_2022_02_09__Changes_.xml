@@ -1,0 +1,14 @@
+<changelist name="Uncommitted_changes_before_Update_at_03_02_2022_02_09_[Changes]" date="1643864952293" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_02_2022_02_09_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 03/02/2022 02:09 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="teste.ods" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_02_2022_02_09_[Changes]/teste.ods" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="db_out/G_ontologia.png" />
+    <option name="AFTER_PATH" value="db_out/G_ontologia.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_02_2022_02_09_[Changes]/G_ontologia.png" />
+  </binary>
+</changelist>

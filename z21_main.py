@@ -175,6 +175,11 @@ plt.savefig('./db_out/graph_datasets.png', dpi=300)
 print('')
 print(80 * '-')
 
+
+lista_pivot=[]
+
+
+
 for zarq_i in lista:
 
     print(''.center(80, '*'))
@@ -259,10 +264,15 @@ for zarq_i in lista:
 
     for i in data.nodes():
         print(zarq_i,'|',i,'|',"{:.2f}".format(float(0)))
+        lista_pivot.append([zarq_i.split('.')[0],i,"{:.2f}".format(float(0))])
+
 
     print('')
     for i in ulist:
         print(i[0].split('.')[0],'|',i[1],'|',"{:.2f}".format(float(i[2])))
+
+
+        #lista_pivot.append([i[0].split('.')[0],i[1],"{:.2f}".format(float(i[2]))])
         #print(i[0])
         #print(i[1])
         #print(i[2])
@@ -271,9 +281,26 @@ for zarq_i in lista:
 
     print(''.center(80, '*'))
 
+
+print('')
+print('CDSV')
+
+df=pd.DataFrame(lista_pivot, columns=['DataSet','Concept','Sim_t'])
+df.reset_index(drop=True, inplace=True)
+df.set_index('DataSet')
+df=df.pivot(values = 'Sim_t', index = 'DataSet', columns = 'Concept')
+df.to_csv(db_system + str(ontologia.split('.')[0]) + '_cdsv.csv', sep='|')
+print(df)
+
+
+
+
+
+
+
 pos = graphviz_layout(graph, prog="dot")
-nx.draw(graph, pos,with_labels=True)
-plt.show()
+#nx.draw(graph, pos,with_labels=True)
+#plt.show()
 
 print('')
 

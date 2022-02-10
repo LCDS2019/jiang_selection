@@ -91,7 +91,7 @@ print(''.center(81, '#'))
 
 z22.apaga_arquivo_sintetico(db_in)
 
-num_arquivos = 40 # quantidade de arquivos
+num_arquivos = 10 # quantidade de arquivos
 colunas_arquivos = 145  # quantidade de colunas de saída
 coluna_molecula = 'molecula'
 coluna_alvo = 'IC50'
@@ -147,7 +147,7 @@ path = db_in
 arr = os.listdir(path)
 
 lista = [arq for arq in arr if (arq.startswith("zarq_"))]
-lista.sort(reverse=False)
+#lista.sort(reverse=False)
 
 print('')
 
@@ -264,12 +264,12 @@ for zarq_i in lista:
 
     #print('')
     for i in ulist:
-        #print(i[0].split('.')[0],'|',i[1],'|',"{:.2f}".format(float(i[2])))
+        print(i[0].split('.')[0],'|',i[1],'|',"{:.2f}".format(float(i[2])))
         lista_mean.append(i)
 
         graph.add_weighted_edges_from([(i[0].split('.')[0],i[1],i[2])])
 
-    print('')
+    #print('')
     #print(''.center(80, '*'))
 
 print('')

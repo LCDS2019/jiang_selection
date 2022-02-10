@@ -168,14 +168,14 @@ def arquivos_sinteticos(db_in,repetition,num_arquivos,df_feature,colunas_arquivo
 
             print('')
             for z in vector:
-                print(colunas[z])
+                #print(colunas[z])
                 zarq.append(colunas[z])
             print('')
 
             print('Layout')
             print(df_feature[zarq].head(3))
 
-            l = str(i).zfill(2)
+            l = str(i).zfill(5)
             #print(l)
             nome_arquivo = str(db_in) + 'zarq_' + str(l)+'_repetition_'+ str(repetition) + '.csv'
 
@@ -238,7 +238,7 @@ def arquivos_sinteticos(db_in,repetition,num_arquivos,df_feature,colunas_arquivo
             #print('Layout')
             #print(df_feature[zarq].head(3))
 
-            l = str(i).zfill(2)
+            l = str(i).zfill(5)
             #print(l)
             nome_arquivo = str(db_in) + 'zarq_' + str(l)+'_repetition_'+ str(repetition) + '.csv'
             #print(nome_arquivo)

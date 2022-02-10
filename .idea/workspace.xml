@@ -8,11 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/jiang_selection.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jiang_selection.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js_docs/docs/about.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js_docs/docs/img/img_ontologia.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js_docs/docs/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js_docs/docs/ontologies.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js_docs/mkdocs.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,18 +50,21 @@
     <property name="ChangesTree.GroupingKeys" value="" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/js_docs/docs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JiangSelection_docs/JiangSelection/docs" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../JiangSelection_docs/JiangSelection/docs" />
       <recent name="$PROJECT_DIR$/js_docs/docs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../JiangSelection_docs/JiangSelection" />
+      <recent name="$PROJECT_DIR$/../JiangSelection_docs/JiangSelection/docs" />
       <recent name="$PROJECT_DIR$/old" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.z21_main">
+  <component name="RunManager" selected="Python.main">
     <configuration name="dataframe" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="jiang_selection" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -174,8 +172,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.z21_main" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.z21_main" />
         <item itemvalue="Python.dataframe" />
         <item itemvalue="Python.z01_main" />
         <item itemvalue="Python.z23_ontology" />
@@ -359,7 +357,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644466993292</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Version 2.1 - Iniciando a linha 7">
+      <created>1644467578317</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1644467578317</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

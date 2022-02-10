@@ -6,5 +6,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="prog" />
     <orderEntry type="module" module-name="mp3" />
+    <orderEntry type="module" module-name="JiangSelection_docs" />
   </component>
 </module>

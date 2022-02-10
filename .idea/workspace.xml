@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="711605f3-3c17-4404-bd35-c2a6eb9784c8" name="Changes" comment="Version 2.1 - cdsv concluído">
+    <list default="true" id="711605f3-3c17-4404-bd35-c2a6eb9784c8" name="Changes" comment="Version 2.1 - Iniciando a linha 7">
+      <change beforePath="$PROJECT_DIR$/.idea/jiang_selection.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jiang_selection.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_system/OntoQSAR_rdf_ccsm.csv" beforeDir="false" afterPath="$PROJECT_DIR$/db_system/OntoQSAR_rdf_ccsm.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_system/OntoQSAR_rdf_ccsm_concepts.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/z25_ccsm.py" beforeDir="false" afterPath="$PROJECT_DIR$/z25_ccsm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js_docs/docs/about.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js_docs/docs/img/img_ontologia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js_docs/docs/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js_docs/docs/ontologies.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js_docs/mkdocs.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +51,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ChangesTree.GroupingKeys" value="" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -83,19 +88,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="jiang_selection" />
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="JiangSelection_docs" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/trash" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../JiangSelection_docs" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trash/tree.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../JiangSelection_docs/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -170,10 +175,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.z21_main" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.dataframe" />
         <item itemvalue="Python.z01_main" />
         <item itemvalue="Python.z23_ontology" />
-        <item itemvalue="Python.tree" />
       </list>
     </recent_temporary>
   </component>
@@ -340,7 +345,21 @@
       <option name="project" value="LOCAL" />
       <updated>1644459956769</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Version 2.1 - Iniciando a linha 7">
+      <created>1644466975066</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1644466975066</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Version 2.1 - Iniciando a linha 7">
+      <created>1644466993292</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1644466993292</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -355,6 +374,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Version 2.1" />
     <MESSAGE value="Version 2.1 - tokenize" />
     <MESSAGE value="Version 2.1 - using ngram" />
@@ -364,6 +384,7 @@
     <MESSAGE value="Version 2.1 - cdsv" />
     <MESSAGE value="Version 2.1 - cdsv pivot" />
     <MESSAGE value="Version 2.1 - cdsv concluído" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 2.1 - cdsv concluído" />
+    <MESSAGE value="Version 2.1 - Iniciando a linha 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 2.1 - Iniciando a linha 7" />
   </component>
 </project>

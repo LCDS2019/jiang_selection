@@ -91,8 +91,8 @@ print(''.center(81, '#'))
 
 z22.apaga_arquivo_sintetico(db_in)
 
-num_arquivos = 25 # quantidade de arquivos
-colunas_arquivos = 10  # quantidade de colunas de saída
+num_arquivos = 40 # quantidade de arquivos
+colunas_arquivos = 145  # quantidade de colunas de saída
 coluna_molecula = 'molecula'
 coluna_alvo = 'IC50'
 frac = 1  # fração do arquivo alvo
@@ -177,7 +177,7 @@ print(80 * '-')
 
 
 lista_pivot=[]
-
+lista_mean=[]
 
 
 for zarq_i in lista:
@@ -228,8 +228,7 @@ for zarq_i in lista:
     TD = lista_n_grams
     TD = set(TD)
     TD = list(TD)
-    print('TD: '+str(TD))
-
+    #print('TD: '+str(TD))
 
     vetores_lista=[]
     ulist = []
@@ -250,53 +249,56 @@ for zarq_i in lista:
 
             vetor_mean=np.mean(vetor)
 
-            ulist.append([zarq_i,j,vetor_mean])
+            ulist.append([zarq_i.split('.')[0],j,"{:.2f}".format(float(vetor_mean))])
     #print('**************************')
 
-    print('')
+    #print('')
 
-    for i in vetores_lista:
-        print(i)
-
-    #ulist = z28.td_similarity_scores(zarq_i, data, TD)
-
-    print('')
+    #for i in vetores_lista:
+        #print(i)
+    #print('')
 
     for i in data.nodes():
-        print(zarq_i,'|',i,'|',"{:.2f}".format(float(0)))
+        #print(zarq_i.split('.')[0],'|',i,'|',"{:.2f}".format(float(0)))
         lista_pivot.append([zarq_i.split('.')[0],i,"{:.2f}".format(float(0))])
 
-
-    print('')
+    #print('')
     for i in ulist:
-        print(i[0].split('.')[0],'|',i[1],'|',"{:.2f}".format(float(i[2])))
-
-
-        #lista_pivot.append([i[0].split('.')[0],i[1],"{:.2f}".format(float(i[2]))])
-        #print(i[0])
-        #print(i[1])
-        #print(i[2])
+        #print(i[0].split('.')[0],'|',i[1],'|',"{:.2f}".format(float(i[2])))
+        lista_mean.append(i)
 
         graph.add_weighted_edges_from([(i[0].split('.')[0],i[1],i[2])])
 
-    print(''.center(80, '*'))
-
+    print('')
+    #print(''.center(80, '*'))
 
 print('')
-print('CDSV')
+print('Arquivo CDSV')
 
+#print(lista_pivot)
+
+print('*****************************')
+
+print('')
+#print('lista pivot')
 df=pd.DataFrame(lista_pivot, columns=['DataSet','Concept','Sim_t'])
-df.reset_index(drop=True, inplace=True)
-df.set_index('DataSet')
+#print('lista mean')
+df_mean=pd.DataFrame(lista_mean, columns=['DataSet','Concept','Sim_t'])
+#print('*****************************')
+print('')
+
+for i in df.values:
+    #print(i)
+    for j in df_mean.values:
+        #print(j)
+        if i[0]==j[0] and i[1]==j[1]:
+            i[2] = j[2]
+#print(df)
+
 df=df.pivot(values = 'Sim_t', index = 'DataSet', columns = 'Concept')
+#df.sort_values(by=['DataSet'], inplace=True)
 df.to_csv(db_system + str(ontologia.split('.')[0]) + '_cdsv.csv', sep='|')
-print(df)
-
-
-
-
-
-
+#print(df)
 
 pos = graphviz_layout(graph, prog="dot")
 #nx.draw(graph, pos,with_labels=True)

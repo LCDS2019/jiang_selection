@@ -146,7 +146,7 @@ def arquivos_sinteticos(db_in,repetition,num_arquivos,df_feature,colunas_arquivo
         print(colunas)
         print('Quantidade de colunas no dataframe de características: '+str(len(colunas)))
         linhas = df_feature.shape[0]
-        print('Quantidade de colunas no dataframe de características: '+str(linhas))
+        print('Quantidade de linhas no dataframe de características: '+str(linhas))
         print('')
 
         for i in range(num_arquivos):
@@ -175,7 +175,11 @@ def arquivos_sinteticos(db_in,repetition,num_arquivos,df_feature,colunas_arquivo
             print('Layout')
             print(df_feature[zarq].head(3))
 
-            nome_arquivo = str(db_in) + 'zarq_' + str(i)+'_repetition_'+ str(repetition) + '.csv'
+            l = str(i).zfill(2)
+            #print(l)
+            nome_arquivo = str(db_in) + 'zarq_' + str(l)+'_repetition_'+ str(repetition) + '.csv'
+
+            #nome_arquivo = str(db_in) + 'zarq_' +'repetition_'+ str(i) + '.csv'
             print(nome_arquivo)
 
             if frac_aleatorio == 1:
@@ -183,7 +187,7 @@ def arquivos_sinteticos(db_in,repetition,num_arquivos,df_feature,colunas_arquivo
 
             df=df_feature[zarq].sample(frac=frac)
             df.to_csv(nome_arquivo, sep='|', encoding='utf-8', index=False)
-            print(df.shape)
+            #print(df.shape)
 
             arquivos.append((str(nome_arquivo) + ' - ' +'shape:' + str(df.shape)))
 
@@ -213,7 +217,7 @@ def arquivos_sinteticos(db_in,repetition,num_arquivos,df_feature,colunas_arquivo
 
         for i in range(num_arquivos):
 
-            print(''.center(70, '*'))
+            #print(''.center(70, '*'))
             x = np.random.choice(np.arange(0, len(colunas)), size=(1, colunas_arquivos - 2), replace=False)
 
             lista=x[0]
@@ -221,34 +225,36 @@ def arquivos_sinteticos(db_in,repetition,num_arquivos,df_feature,colunas_arquivo
             vector=[*my_set]
             vector.insert(0, 0)
             vector.append(len(colunas)-1)
-            print('Arquivo:' + str(i), ' - ', 'colunas:', len(vector), ' - ', vector)
+            #print('Arquivo:' + str(i), ' - ', 'colunas:', len(vector), ' - ', vector)
 
             zarq=list()
 
-            print('')
+            #print('')
             for z in vector:
-                print(colunas[z])
+                #print(colunas[z])
                 zarq.append(colunas[z])
-            print('')
+            #print('')
 
-            print('Layout')
-            print(df_feature[zarq].head(3))
+            #print('Layout')
+            #print(df_feature[zarq].head(3))
 
-            nome_arquivo = str(db_in) + 'zarq_' + str(i)+'_repetition_'+ str(repetition) + '.csv'
-            print(nome_arquivo)
+            l = str(i).zfill(2)
+            #print(l)
+            nome_arquivo = str(db_in) + 'zarq_' + str(l)+'_repetition_'+ str(repetition) + '.csv'
+            #print(nome_arquivo)
 
             df=df_feature[zarq].sample(frac=frac)
             df.to_csv(nome_arquivo, sep='|', encoding='utf-8', index=False)
-            print(df.shape)
+            #print(df.shape)
 
             arquivos.append((str(nome_arquivo) + ' - ' +'shape:' + str(df.shape)))
 
-        print(''.center(70, '*'))
+        #print(''.center(70, '*'))
 
-        print('')
-        print('Arquivos gerados:')
-        for arq in arquivos:
-            print(arq)
+        #print('')
+        #print('Arquivos gerados:')
+        #for arq in arquivos:
+            #print(arq)
         print('')
 
         print(''.center(70, '*'))

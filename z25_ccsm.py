@@ -33,5 +33,5 @@ def ccsm(data,nodes,db_system,ontologia):
     dfC = pd.DataFrame(C)
     dfC.to_csv(db_system+str(ontologia.split('.')[0])+'_ccsm_concepts.csv',sep='|')
 
-    print(M)
+    #print(M)
 

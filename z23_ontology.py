@@ -29,7 +29,6 @@ def load_ontology(db_system,onto_path,ontologia):
 
     print(nx.info(data, n=None))
     nodes=len(data.nodes())
-    print('')
     return(data,nodes)
 
 def create_ontology(ontologia,onto_path):

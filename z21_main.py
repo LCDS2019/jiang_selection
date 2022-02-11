@@ -25,6 +25,8 @@ import z25_ccsm as z25
 import z26_nlp01 as z26
 import z27_ngram as z27
 import z28_nlp02 as z28
+import z29_max_similarity as z28
+
 
 ##########################################################################################
 #Setup
@@ -76,11 +78,13 @@ print(df_feature.head(3))
 df_description=dados[1]
 print(df_description.head(3))
 
+print('')
+
 filename_feature=dados[2]
-#print(filename_feature)
+print(filename_feature)
 
 filename_description=dados[3]
-#print(filename_description)
+print(filename_description)
 
 print('')
 
@@ -97,7 +101,7 @@ coluna_molecula = 'molecula'
 coluna_alvo = 'IC50'
 frac = 1  # fração do arquivo alvo
 frac_aleatorio = 0 # 1-sim / 0-não - permite # diferente de linhas nos arquivos
-repetition = 1 #1 - diferentes # de colunas / 2 - iguais # de colunas
+repetition = 2 #1 - diferentes # de colunas / 2 - iguais # de colunas
 
 z22.arquivos_sinteticos(db_in,repetition,num_arquivos,df_feature,colunas_arquivos,frac,frac_aleatorio)
 
@@ -110,6 +114,7 @@ print(''.center(81, '#'))
 
 print('')
 print('* - '+'sim_spath')
+print('')
 
 z25.ccsm(data,nodes,db_system,ontologia)
 
@@ -127,7 +132,6 @@ print(''.center(80, '-'))
 print(' Datasets disponíveis para seleção '.center(80, '-'))
 print(' path_descriptions '.center(80, '-'))
 print(''.center(80, '-'))
-print('')
 
 print(path_descriptions)
 
@@ -149,7 +153,7 @@ arr = os.listdir(path)
 lista = [arq for arq in arr if (arq.startswith("zarq_"))]
 #lista.sort(reverse=False)
 
-print('')
+#print('')
 
 try:
     descriptions = pd.read_csv(path_descriptions, sep='|')
@@ -157,28 +161,24 @@ try:
 except:
     print("Arquivo de descrições não localizado!")
 
-
-print(80 * '-')
+#print(80 * '-')
 
 graph=nx.Graph()
 graph.add_node('root')
 
 print('')
+lista.sort()
 for zarq_i in lista:
     graph.add_edge('root',zarq_i.split('.')[0])
     print(zarq_i)
-
-plt.clf()
-nx.draw(graph, with_labels=True, node_size=0.5,verticalalignment='bottom')
-plt.savefig('./db_out/graph_datasets.png', dpi=300)
-
 print('')
-print(80 * '-')
 
+
+#print('')
+print(80 * '-')
 
 lista_pivot=[]
 lista_mean=[]
-
 
 for zarq_i in lista:
 
@@ -272,6 +272,10 @@ for zarq_i in lista:
     #print('')
     #print(''.center(80, '*'))
 
+plt.clf()
+nx.draw(graph, with_labels=True, node_size=0.5,verticalalignment='bottom')
+plt.savefig('./db_out/graph_datasets.png', dpi=300)
+
 print('')
 print('Arquivo CDSV')
 
@@ -309,14 +313,17 @@ print('')
 print(''.ljust(81, '#'))
 
 print('')
-'''
+
 ##########################################################################################
 print(''.ljust(81, '#'))
-print('#'+' NLP - Algoritmo 02 '.ljust(80, '#'))
+print('#'+' Máx. Similarity '.ljust(80, '#'))
 print(''.ljust(81, '#'))
+
+
 
 print('')
 
+'''
 ##########################################################################################
 print(''.ljust(81, '#'))
 print('#'+' NLP - Algoritmo 03 '.ljust(80, '#'))

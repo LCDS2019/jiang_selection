@@ -39,6 +39,13 @@ for i in df1.values:
 
 print(df1)
 
+df1.reset_index()
+print(df1.index.values)
+print(df1.at[0,'a'])
+
+
+
+
 '''
 data = []
 for i in df.values:

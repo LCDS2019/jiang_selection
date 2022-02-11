@@ -143,7 +143,7 @@ def arquivos_sinteticos(db_in,repetition,num_arquivos,df_feature,colunas_arquivo
         print('')
 
         colunas = list(df_feature.columns)
-        print(colunas)
+        #print(colunas)
         print('Quantidade de colunas no dataframe de características: '+str(len(colunas)))
         linhas = df_feature.shape[0]
         print('Quantidade de linhas no dataframe de características: '+str(linhas))
@@ -151,7 +151,7 @@ def arquivos_sinteticos(db_in,repetition,num_arquivos,df_feature,colunas_arquivo
 
         for i in range(num_arquivos):
 
-            print(''.center(70, '*'))
+            #print(''.center(70, '*'))
             x = np.random.randint(low=0, high=len(colunas), size=(1, colunas_arquivos-2))
             lista=x[0]
             my_set={*lista}
@@ -162,18 +162,18 @@ def arquivos_sinteticos(db_in,repetition,num_arquivos,df_feature,colunas_arquivo
             vector.append(len(colunas) - 1)
 
 
-            print('Arquivo:' + str(i), ' - ', 'colunas:', len(vector), ' - ', vector)
+            #print('Arquivo:' + str(i), ' - ', 'colunas:', len(vector), ' - ', vector)
 
             zarq=list()
 
-            print('')
+            #print('')
             for z in vector:
                 #print(colunas[z])
                 zarq.append(colunas[z])
-            print('')
+            #print('')
 
-            print('Layout')
-            print(df_feature[zarq].head(3))
+            #print('Layout')
+            #print(df_feature[zarq].head(3))
 
             l = str(i).zfill(5)
             #print(l)
@@ -191,10 +191,13 @@ def arquivos_sinteticos(db_in,repetition,num_arquivos,df_feature,colunas_arquivo
 
             arquivos.append((str(nome_arquivo) + ' - ' +'shape:' + str(df.shape)))
 
+        print('')
         print(''.center(70, '*'))
 
         print('')
         print('Arquivos gerados:')
+        print('')
+
         for arq in arquivos:
             print(arq)
         print('')
@@ -241,7 +244,7 @@ def arquivos_sinteticos(db_in,repetition,num_arquivos,df_feature,colunas_arquivo
             l = str(i).zfill(5)
             #print(l)
             nome_arquivo = str(db_in) + 'zarq_' + str(l)+'_repetition_'+ str(repetition) + '.csv'
-            #print(nome_arquivo)
+            print(nome_arquivo)
 
             df=df_feature[zarq].sample(frac=frac)
             df.to_csv(nome_arquivo, sep='|', encoding='utf-8', index=False)
@@ -251,10 +254,10 @@ def arquivos_sinteticos(db_in,repetition,num_arquivos,df_feature,colunas_arquivo
 
         #print(''.center(70, '*'))
 
-        #print('')
+        print('')
+
         #print('Arquivos gerados:')
         #for arq in arquivos:
             #print(arq)
-        print('')
 
         print(''.center(70, '*'))

@@ -95,13 +95,13 @@ print(''.center(81, '#'))
 
 z22.apaga_arquivo_sintetico(db_in)
 
-num_arquivos = 10 # quantidade de arquivos
+num_arquivos = 350 # quantidade de arquivos
 colunas_arquivos = 145  # quantidade de colunas de saída
 coluna_molecula = 'molecula'
 coluna_alvo = 'IC50'
 frac = 1  # fração do arquivo alvo
 frac_aleatorio = 0 # 1-sim / 0-não - permite # diferente de linhas nos arquivos
-repetition = 2 #1 - diferentes # de colunas / 2 - iguais # de colunas
+repetition = 1 #1 - diferentes # de colunas / 2 - iguais # de colunas
 
 z22.arquivos_sinteticos(db_in,repetition,num_arquivos,df_feature,colunas_arquivos,frac,frac_aleatorio)
 
@@ -116,7 +116,7 @@ print('')
 print('* - '+'sim_spath')
 print('')
 
-z25.ccsm(data,nodes,db_system,ontologia)
+df_ccsm=z25.ccsm(data,nodes,db_system,ontologia)
 
 print('')
 
@@ -249,7 +249,7 @@ for zarq_i in lista:
 
             vetor_mean=np.mean(vetor)
 
-            ulist.append([zarq_i.split('.')[0],j,"{:.2f}".format(float(vetor_mean))])
+            ulist.append([zarq_i.split('.')[0],j,"{:.4f}".format(float(vetor_mean))])
     #print('**************************')
 
     #print('')
@@ -259,12 +259,12 @@ for zarq_i in lista:
     #print('')
 
     for i in data.nodes():
-        #print(zarq_i.split('.')[0],'|',i,'|',"{:.2f}".format(float(0)))
-        lista_pivot.append([zarq_i.split('.')[0],i,"{:.2f}".format(float(0))])
+        #print(zarq_i.split('.')[0],'|',i,'|',"{:.4f}".format(float(0)))
+        lista_pivot.append([zarq_i.split('.')[0],i,"{:.4f}".format(float(0))])
 
     #print('')
     for i in ulist:
-        print(i[0].split('.')[0],'|',i[1],'|',"{:.2f}".format(float(i[2])))
+        print(i[0].split('.')[0],'|',i[1],'|',"{:.4f}".format(float(i[2])))
         lista_mean.append(i)
 
         graph.add_weighted_edges_from([(i[0].split('.')[0],i[1],i[2])])
@@ -277,10 +277,9 @@ nx.draw(graph, with_labels=True, node_size=0.5,verticalalignment='bottom')
 plt.savefig('./db_out/graph_datasets.png', dpi=300)
 
 print('')
+
+print('*****************************')
 print('Arquivo CDSV')
-
-#print(lista_pivot)
-
 print('*****************************')
 
 print('')
@@ -289,7 +288,6 @@ df=pd.DataFrame(lista_pivot, columns=['DataSet','Concept','Sim_t'])
 #print('lista mean')
 df_mean=pd.DataFrame(lista_mean, columns=['DataSet','Concept','Sim_t'])
 #print('*****************************')
-print('')
 
 for i in df.values:
     #print(i)
@@ -299,19 +297,19 @@ for i in df.values:
             i[2] = j[2]
 #print(df)
 
+
 df=df.pivot(values = 'Sim_t', index = 'DataSet', columns = 'Concept')
 #df.sort_values(by=['DataSet'], inplace=True)
 df.to_csv(db_system + str(ontologia.split('.')[0]) + '_cdsv.csv', sep='|')
+df_cdsv=df
+df_cdsv_vf=df
 #print(df)
 
 pos = graphviz_layout(graph, prog="dot")
 #nx.draw(graph, pos,with_labels=True)
 #plt.show()
 
-print('')
-
 print(''.ljust(81, '#'))
-
 print('')
 
 ##########################################################################################
@@ -319,9 +317,44 @@ print(''.ljust(81, '#'))
 print('#'+' Máx. Similarity '.ljust(80, '#'))
 print(''.ljust(81, '#'))
 
+print('')
 
+for i_graph in lista_mean:
+    di=i_graph[0]
+    cj=i_graph[1]
+    sij=float(i_graph[2])
+
+    #print(i_graph[0:3])
+    #print(i_graph[1])
+    #print('----------------')
+
+    for cc in data:
+
+        sim_score=float(df_ccsm.at[cc,cj])*sij
+        #print('{:.4f}'.format(float(sim_score)))
+
+        #print(di,'|',cc)
+
+        #print(df_cdsv.at[di,cc])
+
+        #print('max')
+        #print(sim_score,df_cdsv.at[di,cc])
+        max=np.max([float(sim_score),float(df_cdsv.at[di,cc])])
+        #print('{:.4f}'.format(float(max)))
+        #print('')
+        df_cdsv_vf.at[di,cc]='{:.4f}'.format(float(max))
+
+
+    #print('*****************************')
+
+df_cdsv_vf.to_csv(db_system + str(ontologia.split('.')[0]) + '_df_cdsv_vf.csv', sep='|')
+
+print('*****************************')
+print('Arquivo CDSV_vf')
+print('*****************************')
 
 print('')
+''''''
 
 '''
 ##########################################################################################

@@ -21,13 +21,14 @@ def ccsm(data,nodes,db_system,ontologia):
         for j in data:
             ans=sim_spath(data,i,j)
             #print(i,j,ans)
-            M.append((i,j,"{:.2f}".format(float(ans))))
+            M.append((i,j,"{:.4f}".format(float(ans))))
             #C.append((i,j,ans))
 
     #M=np.array(M)
     #M=np.resize(M, (nodes,nodes))
 
     df = pd.DataFrame(M, columns=['C1', 'C2', 'Ans'])
+    #ccsm=df
 
     df = df.pivot(values='Ans', index='C1', columns='C2')
     #print(df)
@@ -38,3 +39,4 @@ def ccsm(data,nodes,db_system,ontologia):
 
     #print(M)
 
+    return(df)

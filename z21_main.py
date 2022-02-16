@@ -2,7 +2,7 @@
 print(''.ljust(81, '#'))
 print('# PPGSI - USP/EACH 2022')
 print('# Jiang_Selection')
-print('# Version 2.0')
+print('# Version 2.1')
 print('# Author: lcds2019')
 print(''.ljust(81, '#'))
 
@@ -25,7 +25,7 @@ import z25_ccsm as z25
 import z26_nlp01 as z26
 import z27_ngram as z27
 import z28_nlp02 as z28
-import z29_max_similarity as z28
+import z29_ranking as z29
 
 
 ##########################################################################################
@@ -95,8 +95,8 @@ print(''.center(81, '#'))
 
 z22.apaga_arquivo_sintetico(db_in)
 
-num_arquivos = 350 # quantidade de arquivos
-colunas_arquivos = 145  # quantidade de colunas de saída
+num_arquivos = 20 # quantidade de arquivos
+colunas_arquivos = 15  # quantidade de colunas de saída
 coluna_molecula = 'molecula'
 coluna_alvo = 'IC50'
 frac = 1  # fração do arquivo alvo
@@ -344,42 +344,23 @@ for i_graph in lista_mean:
         #print('')
         df_cdsv_vf.at[di,cc]='{:.4f}'.format(float(max))
 
-
-    #print('*****************************')
-
-df_cdsv_vf.to_csv(db_system + str(ontologia.split('.')[0]) + '_df_cdsv_vf.csv', sep='|')
-
 print('*****************************')
 print('Arquivo CDSV_vf')
 print('*****************************')
 
-print('')
-''''''
+df_cdsv_vf.to_csv(db_system + str(ontologia.split('.')[0]) + '_df_cdsv_vf.csv', sep='|')
 
-'''
+print('')
+
 ##########################################################################################
 print(''.ljust(81, '#'))
 print('#'+' NLP - Algoritmo 03 '.ljust(80, '#'))
 print(''.ljust(81, '#'))
 
-print('')
-
-##########################################################################################
-print(''.ljust(81, '#'))
-print('#'+' Apresentação do ranking '.ljust(80, '#'))
-print(''.ljust(81, '#'))
+z29.ranking(db_system,ontologia,df_cdsv_vf)
 
 print('')
 
-##########################################################################################
-print(''.ljust(81, '#'))
-print('#'+' Registro de estatísticas '.ljust(80, '#'))
-print(''.ljust(81, '#'))
-
-
-
-print('')
-'''
 ##########################################################################################
 print(''.ljust(81, '-'))
 

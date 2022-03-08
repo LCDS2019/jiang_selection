@@ -5,7 +5,7 @@ import os
 import pickle
 import pandas as pd
 import numpy as np
-from z24_measures import *
+import z24_measures as z24
 
 def ccsm(data,nodes,db_system,ontologia):
 
@@ -14,12 +14,14 @@ def ccsm(data,nodes,db_system,ontologia):
     print(' CCSM matrix '.center(80, '#'))
     print('')
 
-
     M=[]
     C=[]
+
     for i in data:
         for j in data:
-            ans=sim_spath(data,i,j)
+
+            ans=z24.sim_spath(data,i,j)
+            #ans = z24.sim_wup(data, i, j)
             #print(i,j,ans)
             M.append((i,j,"{:.4f}".format(float(ans))))
             #C.append((i,j,ans))

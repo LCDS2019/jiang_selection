@@ -7,5 +7,7 @@
     <orderEntry type="module" module-name="prog" />
     <orderEntry type="module" module-name="mp3" />
     <orderEntry type="module" module-name="doc" />
+    <orderEntry type="module" module-name="jsdoc" />
+    <orderEntry type="module" module-name="jiang_selection_2" />
   </component>
 </module>

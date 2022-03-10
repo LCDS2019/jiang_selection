@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="711605f3-3c17-4404-bd35-c2a6eb9784c8" name="Changes" comment="Version 2.1 - cosine similarity Vf">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_out/graph_datasets.png" beforeDir="false" afterPath="$PROJECT_DIR$/db_out/graph_datasets.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/z21_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/z21_main.py" afterDir="false" />
-    </list>
+    <list default="true" id="711605f3-3c17-4404-bd35-c2a6eb9784c8" name="Changes" comment="Version 2.1 - cosine similarity Vf" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -466,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646719177315</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Version 2.1 - cosine similarity Vf">
+      <created>1646885282650</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1646885282650</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

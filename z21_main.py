@@ -250,9 +250,11 @@ for zarq_i in lista:
             #print(str(j)+': '+str(vetor))
             vetores_lista.append([j,vetor])
 
-            vetor_mean=np.mean(vetor)
+            #vetor_mean=np.mean(vetor)
+            vetor_sum=np.sum(vetor)
 
-            ulist.append([zarq_i.split('.')[0],j,"{:.4f}".format(float(vetor_mean))])
+            #ulist.append([zarq_i.split('.')[0],j,"{:.4f}".format(float(vetor_mean))])
+            ulist.append([zarq_i.split('.')[0], j, "{:.4f}".format(float(vetor_sum))])
     #print('**************************')
 
     #print('')

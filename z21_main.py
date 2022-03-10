@@ -75,10 +75,12 @@ dados=z22.arquivos_disponiveis(db_in)
 df_feature=dados[0]
 print(df_feature.head(3))
 
+print('----------------')
+
 df_description=dados[1]
 print(df_description.head(3))
 
-print('')
+print('----------------')
 
 filename_feature=dados[2]
 print(filename_feature)
@@ -95,8 +97,8 @@ print(''.center(81, '#'))
 
 z22.apaga_arquivo_sintetico(db_in)
 
-num_arquivos = 20 # quantidade de arquivos
-colunas_arquivos = 15  # quantidade de colunas de saída
+num_arquivos = 5 # quantidade de arquivos
+colunas_arquivos = 10  # quantidade de colunas de saída
 coluna_molecula = 'molecula'
 coluna_alvo = 'IC50'
 frac = 1  # fração do arquivo alvo
@@ -194,7 +196,7 @@ for zarq_i in lista:
     df = pd.DataFrame(l, columns=['Atribute'])
 
     dfl=pd.merge(df, descriptions, on=['Atribute'], how='left')
-    #print(dfl)
+    print(dfl)
 
     M = []
     lista_n_grams = []
@@ -204,15 +206,15 @@ for zarq_i in lista:
         atributo=str(row[0])
         #print('Atributo: '+ str(atributo))
 
-        row=str(row[1])
-        #print('Descrição: '+str(row))
+        descricao=str(row[1])
+        #print('Descrição: '+str(descricao))
 
         # ngram ****************************************************************
         # n = 5
 
-        td_gram=z27.get_ngrams_01(row)
+        td_gram=z27.get_ngrams_01(descricao)
 
-        td = z26.tokenize_descriptions(index, atributo, row, english_stops, punctuations)
+        td = z26.tokenize_descriptions(index, atributo, descricao, english_stops, punctuations)
         #print('Td: '+str(td))
 
         for i in td:
@@ -228,7 +230,7 @@ for zarq_i in lista:
     TD = lista_n_grams
     TD = set(TD)
     TD = list(TD)
-    #print('TD: '+str(TD))
+    print('TD: '+str(TD))
 
     vetores_lista=[]
     ulist = []
@@ -238,6 +240,7 @@ for zarq_i in lista:
         vetor=[]
         for i in data.nodes():
             u=z24.sim_spath2(vetor,l, zarq_i, data, i, j)
+            #u = z24.sim_wup2(vetor, l, zarq_i, data, i, j)
 
             l=l+1
 
@@ -247,9 +250,11 @@ for zarq_i in lista:
             #print(str(j)+': '+str(vetor))
             vetores_lista.append([j,vetor])
 
-            vetor_mean=np.mean(vetor)
+            #vetor_mean=np.mean(vetor)
+            vetor_sum=np.sum(vetor)
 
-            ulist.append([zarq_i.split('.')[0],j,"{:.4f}".format(float(vetor_mean))])
+            #ulist.append([zarq_i.split('.')[0],j,"{:.4f}".format(float(vetor_mean))])
+            ulist.append([zarq_i.split('.')[0], j, "{:.4f}".format(float(vetor_sum))])
     #print('**************************')
 
     #print('')
@@ -295,7 +300,7 @@ for i in df.values:
         #print(j)
         if i[0]==j[0] and i[1]==j[1]:
             i[2] = j[2]
-#print(df)
+print(df)
 
 
 df=df.pivot(values = 'Sim_t', index = 'DataSet', columns = 'Concept')
@@ -329,26 +334,27 @@ for i_graph in lista_mean:
     #print('----------------')
 
     for cc in data:
-
+        print('----------------')
         sim_score=float(df_ccsm.at[cc,cj])*sij
         #print('{:.4f}'.format(float(sim_score)))
 
-        #print(di,'|',cc)
+        print(di,'|',cc)
 
         #print(df_cdsv.at[di,cc])
 
-        #print('max')
-        #print(sim_score,df_cdsv.at[di,cc])
+        print('max')
+        print(sim_score,df_cdsv.at[di,cc])
         max=np.max([float(sim_score),float(df_cdsv.at[di,cc])])
-        #print('{:.4f}'.format(float(max)))
+        print('{:.4f}'.format(float(max)))
         #print('')
         df_cdsv_vf.at[di,cc]='{:.4f}'.format(float(max))
+        #print(df_cdsv_vf)
 
 print('*****************************')
 print('Arquivo CDSV_vf')
 print('*****************************')
 
-df_cdsv_vf.to_csv(db_system + str(ontologia.split('.')[0]) + '_df_cdsv_vf.csv', sep='|')
+df_cdsv_vf.to_csv(db_system + str(ontologia.split('.')[0]) + '_df_cdsm_vf.csv', sep='|')
 
 print('')
 

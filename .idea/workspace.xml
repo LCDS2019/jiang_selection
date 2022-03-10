@@ -4,368 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="711605f3-3c17-4404-bd35-c2a6eb9784c8" name="Changes" comment="Version 2.1 - cosine similarity trash">
-      <change afterPath="$PROJECT_DIR$/db_system/OntoQSAR_rdf_ranking.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db_system/analise_de_layout.ods" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z29_ranking.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00000_repetition_1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/db_in/zarq_00000_repetition_1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00001_repetition_1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/db_in/zarq_00001_repetition_1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00002_repetition_1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/db_in/zarq_00002_repetition_1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00003_repetition_1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/db_in/zarq_00003_repetition_1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00004_repetition_1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/db_in/zarq_00004_repetition_1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00005_repetition_1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/db_in/zarq_00005_repetition_1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00006_repetition_1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/db_in/zarq_00006_repetition_1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00007_repetition_1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/db_in/zarq_00007_repetition_1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00008_repetition_1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/db_in/zarq_00008_repetition_1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00009_repetition_1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/db_in/zarq_00009_repetition_1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00010_repetition_1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/db_in/zarq_00010_repetition_1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00011_repetition_1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/db_in/zarq_00011_repetition_1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00012_repetition_1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/db_in/zarq_00012_repetition_1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00013_repetition_1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/db_in/zarq_00013_repetition_1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00014_repetition_1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/db_in/zarq_00014_repetition_1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00015_repetition_1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/db_in/zarq_00015_repetition_1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00016_repetition_1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/db_in/zarq_00016_repetition_1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00017_repetition_1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/db_in/zarq_00017_repetition_1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00018_repetition_1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/db_in/zarq_00018_repetition_1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00019_repetition_1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/db_in/zarq_00019_repetition_1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00020_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00021_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00022_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00023_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00024_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00025_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00026_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00027_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00028_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00029_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00030_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00031_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00032_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00033_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00034_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00035_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00036_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00037_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00038_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00039_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00040_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00041_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00042_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00043_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00044_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00045_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00046_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00047_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00048_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00049_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00050_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00051_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00052_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00053_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00054_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00055_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00056_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00057_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00058_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00059_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00060_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00061_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00062_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00063_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00064_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00065_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00066_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00067_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00068_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00069_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00070_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00071_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00072_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00073_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00074_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00075_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00076_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00077_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00078_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00079_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00080_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00081_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00082_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00083_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00084_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00085_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00086_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00087_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00088_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00089_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00090_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00091_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00092_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00093_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00094_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00095_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00096_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00097_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00098_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00099_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00100_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00101_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00102_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00103_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00104_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00105_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00106_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00107_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00108_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00109_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00110_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00111_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00112_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00113_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00114_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00115_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00116_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00117_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00118_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00119_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00120_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00121_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00122_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00123_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00124_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00125_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00126_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00127_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00128_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00129_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00130_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00131_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00132_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00133_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00134_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00135_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00136_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00137_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00138_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00139_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00140_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00141_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00142_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00143_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00144_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00145_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00146_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00147_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00148_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00149_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00150_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00151_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00152_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00153_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00154_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00155_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00156_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00157_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00158_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00159_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00160_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00161_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00162_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00163_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00164_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00165_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00166_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00167_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00168_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00169_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00170_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00171_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00172_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00173_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00174_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00175_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00176_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00177_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00178_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00179_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00180_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00181_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00182_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00183_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00184_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00185_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00186_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00187_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00188_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00189_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00190_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00191_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00192_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00193_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00194_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00195_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00196_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00197_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00198_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00199_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00200_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00201_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00202_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00203_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00204_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00205_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00206_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00207_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00208_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00209_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00210_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00211_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00212_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00213_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00214_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00215_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00216_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00217_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00218_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00219_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00220_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00221_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00222_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00223_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00224_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00225_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00226_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00227_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00228_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00229_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00230_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00231_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00232_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00233_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00234_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00235_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00236_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00237_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00238_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00239_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00240_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00241_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00242_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00243_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00244_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00245_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00246_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00247_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00248_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00249_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00250_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00251_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00252_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00253_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00254_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00255_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00256_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00257_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00258_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00259_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00260_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00261_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00262_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00263_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00264_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00265_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00266_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00267_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00268_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00269_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00270_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00271_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00272_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00273_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00274_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00275_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00276_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00277_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00278_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00279_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00280_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00281_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00282_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00283_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00284_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00285_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00286_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00287_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00288_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00289_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00290_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00291_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00292_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00293_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00294_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00295_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00296_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00297_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00298_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00299_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00300_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00301_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00302_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00303_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00304_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00305_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00306_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00307_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00308_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00309_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00310_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00311_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00312_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00313_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00314_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00315_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00316_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00317_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00318_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00319_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00320_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00321_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00322_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00323_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00324_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00325_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00326_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00327_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00328_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00329_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00330_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00331_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00332_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00333_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00334_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00335_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00336_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00337_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00338_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00339_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00340_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00341_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00342_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00343_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00344_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00345_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00346_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00347_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00348_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_in/zarq_00349_repetition_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_out/graph_datasets.png" beforeDir="false" afterPath="$PROJECT_DIR$/db_out/graph_datasets.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_system/OntoQSAR_rdf_cdsv.csv" beforeDir="false" afterPath="$PROJECT_DIR$/db_system/OntoQSAR_rdf_cdsv.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_system/OntoQSAR_rdf_df_cdsv_vf.csv" beforeDir="false" afterPath="$PROJECT_DIR$/db_system/OntoQSAR_rdf_df_cdsv_vf.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trash/cosine.py" beforeDir="false" afterPath="$PROJECT_DIR$/trash/cosine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/z21_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/z21_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/z29_max_similarity.py" beforeDir="false" />
-    </list>
+    <list default="true" id="711605f3-3c17-4404-bd35-c2a6eb9784c8" name="Changes" comment="Version 2.1 - v2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -381,6 +20,9 @@
   <component name="Git.Merge.Settings">
     <option name="BRANCH" value="origin/master" />
   </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="jiang_selection_2" />
+  </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="PUSH_TAGS">
@@ -388,6 +30,11 @@
         <option name="argument" value="--tags" />
         <option name="title" value="All" />
       </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -424,7 +71,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../doc/js_doc/docs" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="jiang_selection" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="jiang_selection" />
+      </console-settings>
+    </option>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -433,14 +88,78 @@
       <recent name="$PROJECT_DIR$/js_docs/docs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../jiang_selection_2" />
       <recent name="$PROJECT_DIR$/../doc/js_doc/docs" />
       <recent name="$PROJECT_DIR$/../JiangSelection_docs/JiangSelection" />
       <recent name="$PROJECT_DIR$/../JiangSelection_docs/JiangSelection/docs" />
       <recent name="$PROJECT_DIR$/old" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.z21_main">
-    <configuration name="cosine" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.js01_setup">
+    <configuration name="js01_setup" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="jiang_selection_2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../jiang_selection_2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../jiang_selection_2/js01_setup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="js02_arquivos" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="jiang_selection_2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../jiang_selection_2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../jiang_selection_2/js02_arquivos.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="vetorlinhas" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="jiang_selection_2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../jiang_selection_2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../jiang_selection_2/vetorlinhas.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="wu" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="jiang_selection" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -452,49 +171,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trash/cosine.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="dataframe" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="jiang_selection" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/trash" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trash/dataframe.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="mp3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="mp3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../mp3" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../mp3/mp3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trash/wu.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -524,41 +201,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="z29_max_similarity" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="jiang_selection" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/z29_max_similarity.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python.dataframe" />
       <item itemvalue="Python.z21_main" />
-      <item itemvalue="Python.z29_max_similarity" />
-      <item itemvalue="Python.mp3" />
-      <item itemvalue="Python.cosine" />
+      <item itemvalue="Python.wu" />
+      <item itemvalue="Python.js01_setup" />
+      <item itemvalue="Python.js02_arquivos" />
+      <item itemvalue="Python.vetorlinhas" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.js01_setup" />
         <item itemvalue="Python.z21_main" />
-        <item itemvalue="Python.cosine" />
-        <item itemvalue="Python.mp3" />
-        <item itemvalue="Python.z29_max_similarity" />
-        <item itemvalue="Python.dataframe" />
+        <item itemvalue="Python.js02_arquivos" />
+        <item itemvalue="Python.vetorlinhas" />
+        <item itemvalue="Python.wu" />
       </list>
     </recent_temporary>
   </component>
@@ -795,7 +451,42 @@
       <option name="project" value="LOCAL" />
       <updated>1644894928110</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Version 2.1 - cosine similarity Vf">
+      <created>1644989629351</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1644989629351</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Version 2.1 - cosine similarity Vf">
+      <created>1646719177314</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1646719177315</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Version 2.1 - cosine similarity Vf">
+      <created>1646885282650</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1646885282650</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Version 2.1 - v2">
+      <created>1646885563741</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1646885563741</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Version 2.1 - v2">
+      <created>1646885772435</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1646885772435</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -826,6 +517,8 @@
     <MESSAGE value="Version 2.1 - Iniciando a linha 7" />
     <MESSAGE value="Version 2.1 - cdsv final" />
     <MESSAGE value="Version 2.1 - cosine similarity trash" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 2.1 - cosine similarity trash" />
+    <MESSAGE value="Version 2.1 - cosine similarity Vf" />
+    <MESSAGE value="Version 2.1 - v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 2.1 - v2" />
   </component>
 </project>
